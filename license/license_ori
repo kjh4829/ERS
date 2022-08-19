@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<license>
+	<supplyNumber>
+		M2Soft-220210-A072-0094-0049
+	</supplyNumber>
+	<serial>
+		9074-0238-C972-4E1B
+	</serial>
+	<generatedBy>
+		MINERVA
+	</generatedBy>
+	<version>
+		6.0.0.0
+	</version>
+	<user>
+		0 Unlimited
+	</user>
+	<kind>
+		TEST (20220210~20220810)
+	</kind>
+	<companyName>
+		한국스탠다드차타드은행
+	</companyName>
+	<core>
+		null
+	</core>
+	<volumeID>
+		null
+	</volumeID>
+	<exportType>
+		[mrr, xls, xlsx, csv, cell, pdf, png, jpg, tif, bmp, j2k, gif, hwp, ppt, pptx, doc, docx, txt, mrrml, xml, odt, odp, ods, rtf, html, html5, mrx, brl]
+	</exportType>
+	<serverType>
+		[DataServer(0), ReportingServer(1), DeliveryServer(2), MobileServer(3), RepositoryServer(4)]
+		[InfotalkServer(5), ReportPortal(6), ShareServer(7), FormServer(8), AdminConsole(9), ProxyServer(10)]
+	</serverType>
+	<serverSideViewerType>
+		[FlashViewer(0), HTML5Viewer(1)]
+	</serverSideViewerType>
+	<featureType>
+		[FormField, Note, Certification, MultiInstance, Spool]
+	</featureType>
+	<data>
+CwJQOANgJQMBAgZQNQJQYwYwJQYQYRCBDRBgJQNwZAJQZgMRFAMxFBBwZgNxAwOBFBAgZgNBFAMhAxBwMRFgYwOQJQORGAMQNxHgYRKBGgMBAxCgZBIAZQJQZAMgUgShABIAZhFBQQMxQQYhFgZBOQYxHgZANBJAYxDQYhMBIgZhHgMxDQYRBREwMBFgMBTgZgSAJQZQMQKwJQYgYwbRCBIhXRDgWAWgUxAxNAMBIgOQZgeROhBwYRKgYxAhVhAxEwYhAgMhIgZQZgTRAwNxFgMReAYhaQQhCBJAMBHgOBHgMhjANxOQMBGAORgxDQYxOQZhAgZAMATxKxJAYhIgZAYwaBAAOBhgZBFgNxQQMhAhWBABnRChYhaBARYRJAZBQQNxRgJQNRjAOAZgegaxCwNgZgaROhNgNgQRZRIgOAYQdRChpxFxYQNwcxBRJBsRCxjBsxEREwYREwZQMgdhzROhQQZRKgMRJAOBFgZQZQTgVRJBEAORtBNhcRUBDQMBORLBCx7RvQYQbBAxRRQQOBqRFBCgYxNAZQMAcwVhYRKgNBNAYQMhFgNROQMhGAZBfxDxHBmwJQMxExrxOh/RjAZB7SKQYSEgZhKiGBYR0hEwMRSxCgMh7ROQYhBxBBCBNCFQJSMQMRAgYwNR0AMSAhCBGBYgdwJRLg==
+	</data>
+</license>

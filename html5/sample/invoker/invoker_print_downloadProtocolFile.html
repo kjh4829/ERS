@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html style="margin: 0; height: 100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix ReportingServer Invoker</title>
+		<script src="../../js/invoker/crownix-invoker.min.js"></script>
+		<script>
+			window.onload = function(){
+				var invoker = new m2soft.crownix.ReportingServerInvoker('http://localhost:8080/ReportingServer/service');
+				invoker.addParameter('opcode', '500');
+				invoker.addParameter('mrd_path', 'sample.mrd');
+				// You need the "/rpdfprintdialog" parameter to enable pdf printing in your browser.
+				invoker.addParameter('mrd_param', '/rpdfprintdialog /rfn [sample.txt]');
+				invoker.addParameter('export_type', 'pdf');
+				invoker.addParameter('protocol', 'file');
+				
+				// Not using or using iframe in file download(If attachment value is empty(false), Prevent PDF file from displaying in browser.)
+				invoker.useIframe(true);
+				
+				// Can't detect error during export.
+				// If you want to detect error, use "invoker_print.html".
+				invoker.invoke();
+				
+			};
+		</script>
+	</head>
+	<body style="margin: 0; height: 100%">
+		<div id="response" style="position:absolute; width:100%; height:100%;">
+		</div>
+	</body>
+</html>

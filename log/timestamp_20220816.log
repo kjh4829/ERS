@@ -1,0 +1,93 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\WINDOWS\system32
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-daemon.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-common.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\ant-1.6.5.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\core-3.1.1.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-util-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-api-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\servlet-api-2.5-20081211.jar
+file.encoding=EUC_KR
+user.language=ko
+]
+
+[2022-08-16 09:25:39.483][INFO ][20220816092539341] [rdid=20220816092539341] [01-process start       ] LabTime=    17(ms) ElapsedTime=    17(ms) 
+[2022-08-16 09:25:41.481][INFO ][20220816092539341] [rdid=20220816092539341] [02-write mml start(J-S)] LabTime=  1998(ms) ElapsedTime=  2015(ms) 
+[2022-08-16 09:25:43.877][INFO ][20220816092539341] [rdid=20220816092539341] [03-write mml success   ] LabTime=  2397(ms) ElapsedTime=  4412(ms) 
+[2022-08-16 09:25:43.877][INFO ][20220816092539341] [rdid=20220816092539341] [04-process success     ] LabTime=     0(ms) ElapsedTime=  4412(ms) 
+[2022-08-16 09:25:52.368][INFO ][20220816092552362] [rdid=20220816092552362] [01-process start       ] LabTime=     2(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:25:52.375][INFO ][20220816092552362] [rdid=20220816092552362] [02-write mml start(J-S)] LabTime=     8(ms) ElapsedTime=    10(ms) 
+[2022-08-16 09:25:52.525][INFO ][20220816092552362] [rdid=20220816092552362] [03-write mml success   ] LabTime=   149(ms) ElapsedTime=   159(ms) 
+[2022-08-16 09:25:52.526][INFO ][20220816092552362] [rdid=20220816092552362] [04-process success     ] LabTime=     1(ms) ElapsedTime=   160(ms) 
+[2022-08-16 09:27:22.327][INFO ][20220816092722324] [rdid=20220816092722324] [01-process start       ] LabTime=     2(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:27:22.330][INFO ][20220816092722324] [rdid=20220816092722324] [02-write mml start(J-S)] LabTime=     2(ms) ElapsedTime=     4(ms) 
+[2022-08-16 09:27:22.396][INFO ][20220816092722324] [rdid=20220816092722324] [03-write mml success   ] LabTime=    66(ms) ElapsedTime=    70(ms) 
+[2022-08-16 09:27:22.396][INFO ][20220816092722324] [rdid=20220816092722324] [04-process success     ] LabTime=     1(ms) ElapsedTime=    71(ms) 
+[2022-08-16 09:29:02.275][INFO ][20220816092902270] [rdid=20220816092902270] [01-process start       ] LabTime=     3(ms) ElapsedTime=     3(ms) 
+[2022-08-16 09:29:02.280][INFO ][20220816092902270] [rdid=20220816092902270] [02-write mml start(J-S)] LabTime=     5(ms) ElapsedTime=     8(ms) 
+[2022-08-16 09:29:05.008][INFO ][20220816092902270] [rdid=20220816092902270] [03-write mml success   ] LabTime=  2727(ms) ElapsedTime=  2735(ms) 
+[2022-08-16 09:29:05.008][INFO ][20220816092902270] [rdid=20220816092902270] [04-process success     ] LabTime=     1(ms) ElapsedTime=  2736(ms) 
+[2022-08-16 09:29:27.340][INFO ][20220816092927335] [rdid=20220816092927335] [01-process start       ] LabTime=     2(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:29:27.352][INFO ][20220816092927335] [rdid=20220816092927335] [02-write mml start(J-S)] LabTime=    12(ms) ElapsedTime=    14(ms) 
+[2022-08-16 09:29:27.819][INFO ][20220816092927335] [rdid=20220816092927335] [03-write mml success   ] LabTime=   467(ms) ElapsedTime=   481(ms) 
+[2022-08-16 09:29:27.820][INFO ][20220816092927335] [rdid=20220816092927335] [04-process success     ] LabTime=     1(ms) ElapsedTime=   482(ms) 
+[2022-08-16 09:30:07.009][INFO ][20220816093007006] [rdid=20220816093007006] [01-process start       ] LabTime=     2(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:30:07.017][INFO ][20220816093007006] [rdid=20220816093007006] [02-write mml start(J-S)] LabTime=     7(ms) ElapsedTime=     9(ms) 
+[2022-08-16 09:30:07.480][INFO ][20220816093007006] [rdid=20220816093007006] [03-write mml success   ] LabTime=   464(ms) ElapsedTime=   473(ms) 
+[2022-08-16 09:30:07.481][INFO ][20220816093007006] [rdid=20220816093007006] [04-process success     ] LabTime=     1(ms) ElapsedTime=   474(ms) 
+[2022-08-16 09:30:21.014][INFO ][20220816093021011] [rdid=20220816093021011] [01-process start       ] LabTime=     2(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:30:21.018][INFO ][20220816093021011] [rdid=20220816093021011] [02-write mml start(J-S)] LabTime=     3(ms) ElapsedTime=     5(ms) 
+[2022-08-16 09:30:21.169][INFO ][20220816093021011] [rdid=20220816093021011] [03-write mml success   ] LabTime=   151(ms) ElapsedTime=   156(ms) 
+[2022-08-16 09:30:21.169][INFO ][20220816093021011] [rdid=20220816093021011] [04-process success     ] LabTime=     1(ms) ElapsedTime=   157(ms) 
+[2022-08-16 09:30:22.196][INFO ][20220816093022192] [rdid=20220816093022192] [01-process start       ] LabTime=     1(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:30:22.199][INFO ][20220816093022192] [rdid=20220816093022192] [02-write mml start(J-S)] LabTime=     4(ms) ElapsedTime=     5(ms) 
+[2022-08-16 09:30:22.344][INFO ][20220816093022192] [rdid=20220816093022192] [03-write mml success   ] LabTime=   143(ms) ElapsedTime=   148(ms) 
+[2022-08-16 09:30:22.345][INFO ][20220816093022192] [rdid=20220816093022192] [04-process success     ] LabTime=     3(ms) ElapsedTime=   151(ms) 
+[2022-08-16 09:30:22.933][INFO ][20220816093022931] [rdid=20220816093022931] [01-process start       ] LabTime=     1(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:30:22.936][INFO ][20220816093022931] [rdid=20220816093022931] [02-write mml start(J-S)] LabTime=     3(ms) ElapsedTime=     4(ms) 
+[2022-08-16 09:30:23.095][INFO ][20220816093022931] [rdid=20220816093022931] [03-write mml success   ] LabTime=   159(ms) ElapsedTime=   163(ms) 
+[2022-08-16 09:30:23.096][INFO ][20220816093022931] [rdid=20220816093022931] [04-process success     ] LabTime=     0(ms) ElapsedTime=   163(ms) 
+[2022-08-16 09:30:33.820][INFO ][20220816093033816] [rdid=20220816093033816] [01-process start       ] LabTime=     3(ms) ElapsedTime=     3(ms) 
+[2022-08-16 09:30:33.827][INFO ][20220816093033816] [rdid=20220816093033816] [02-write mml start(J-S)] LabTime=     6(ms) ElapsedTime=     9(ms) 
+[2022-08-16 09:30:34.197][INFO ][20220816093033816] [rdid=20220816093033816] [03-write mml success   ] LabTime=   369(ms) ElapsedTime=   378(ms) 
+[2022-08-16 09:30:34.197][INFO ][20220816093033816] [rdid=20220816093033816] [04-process success     ] LabTime=     2(ms) ElapsedTime=   380(ms) 
+[2022-08-16 09:30:49.255][INFO ][20220816093049252] [rdid=20220816093049252] [01-process start       ] LabTime=     1(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:30:49.259][INFO ][20220816093049252] [rdid=20220816093049252] [02-write mml start(J-S)] LabTime=     5(ms) ElapsedTime=     6(ms) 
+[2022-08-16 09:30:49.452][INFO ][20220816093049252] [rdid=20220816093049252] [03-write mml success   ] LabTime=   192(ms) ElapsedTime=   198(ms) 
+[2022-08-16 09:30:49.453][INFO ][20220816093049252] [rdid=20220816093049252] [04-process success     ] LabTime=     1(ms) ElapsedTime=   199(ms) 
+[2022-08-16 09:31:15.577][INFO ][20220816093115514] [rdid=20220816093115514] [01-process start       ] LabTime=     5(ms) ElapsedTime=     5(ms) 
+[2022-08-16 09:31:15.578][INFO ][20220816093115514] [rdid=20220816093115514] [02-export start        ] LabTime=     1(ms) ElapsedTime=     6(ms) 
+[2022-08-16 09:31:15.875][INFO ][20220816093115514] [rdid=20220816093115514] [03-open file success   ] LabTime=   297(ms) ElapsedTime=   303(ms) 
+[2022-08-16 09:31:34.611][INFO ][20220816093115514] [rdid=20220816093115514] [04-save file success   ] LabTime= 18736(ms) ElapsedTime= 19039(ms) 
+[2022-08-16 09:31:34.614][INFO ][20220816093115514] [rdid=20220816093115514] [05-export success      ] LabTime=     3(ms) ElapsedTime= 19042(ms) 
+[2022-08-16 09:31:34.616][INFO ][20220816093115514] [rdid=20220816093115514] [06-process finish      ] LabTime=     2(ms) ElapsedTime= 19044(ms) 
+[2022-08-16 09:31:58.604][INFO ][20220816093158603] [rdid=20220816093158603] [01-process start       ] LabTime=     0(ms) ElapsedTime=     0(ms) 
+[2022-08-16 09:31:58.608][INFO ][20220816093158603] [rdid=20220816093158603] [02-write mml start(J-S)] LabTime=     4(ms) ElapsedTime=     4(ms) 
+[2022-08-16 09:31:58.762][INFO ][20220816093158603] [rdid=20220816093158603] [03-write mml success   ] LabTime=   154(ms) ElapsedTime=   158(ms) 
+[2022-08-16 09:31:58.763][INFO ][20220816093158603] [rdid=20220816093158603] [04-process success     ] LabTime=     1(ms) ElapsedTime=   159(ms) 
+[2022-08-16 09:31:59.966][INFO ][20220816093159964] [rdid=20220816093159964] [01-process start       ] LabTime=     1(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:31:59.967][INFO ][20220816093159964] [rdid=20220816093159964] [02-export start        ] LabTime=     1(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:32:00.073][INFO ][20220816093159964] [rdid=20220816093159964] [03-open file success   ] LabTime=   106(ms) ElapsedTime=   108(ms) 
+[2022-08-16 09:32:02.498][INFO ][20220816093159964] [rdid=20220816093159964] [04-save file success   ] LabTime=  2425(ms) ElapsedTime=  2533(ms) 
+[2022-08-16 09:32:02.500][INFO ][20220816093159964] [rdid=20220816093159964] [05-export success      ] LabTime=     2(ms) ElapsedTime=  2535(ms) 
+[2022-08-16 09:32:02.501][INFO ][20220816093159964] [rdid=20220816093159964] [06-process finish      ] LabTime=     1(ms) ElapsedTime=  2536(ms) 
+[2022-08-16 09:32:09.773][INFO ][20220816093209771] [rdid=20220816093209771] [01-process start       ] LabTime=     2(ms) ElapsedTime=     2(ms) 
+[2022-08-16 09:32:09.779][INFO ][20220816093209771] [rdid=20220816093209771] [02-write mml start(J-S)] LabTime=     6(ms) ElapsedTime=     8(ms) 
+[2022-08-16 09:32:09.879][INFO ][20220816093209771] [rdid=20220816093209771] [03-write mml success   ] LabTime=   100(ms) ElapsedTime=   108(ms) 
+[2022-08-16 09:32:09.880][INFO ][20220816093209771] [rdid=20220816093209771] [04-process success     ] LabTime=     0(ms) ElapsedTime=   108(ms) 
+[2022-08-16 09:32:11.822][INFO ][20220816093211820] [rdid=20220816093211820] [01-process start       ] LabTime=     1(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:32:11.822][INFO ][20220816093211820] [rdid=20220816093211820] [02-export start        ] LabTime=     0(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:32:11.897][INFO ][20220816093211820] [rdid=20220816093211820] [03-open file success   ] LabTime=    75(ms) ElapsedTime=    76(ms) 
+[2022-08-16 09:32:14.395][INFO ][20220816093211820] [rdid=20220816093211820] [04-save file success   ] LabTime=  2498(ms) ElapsedTime=  2574(ms) 
+[2022-08-16 09:32:14.397][INFO ][20220816093211820] [rdid=20220816093211820] [05-export success      ] LabTime=     2(ms) ElapsedTime=  2576(ms) 
+[2022-08-16 09:32:14.398][INFO ][20220816093211820] [rdid=20220816093211820] [06-process finish      ] LabTime=     1(ms) ElapsedTime=  2577(ms) 
+[2022-08-16 09:32:26.955][INFO ][20220816093226953] [rdid=20220816093226953] [01-process start       ] LabTime=     1(ms) ElapsedTime=     1(ms) 
+[2022-08-16 09:32:26.959][INFO ][20220816093226953] [rdid=20220816093226953] [02-write mml start(J-S)] LabTime=     4(ms) ElapsedTime=     5(ms) 
+[2022-08-16 09:32:27.130][INFO ][20220816093226953] [rdid=20220816093226953] [03-write mml success   ] LabTime=   170(ms) ElapsedTime=   175(ms) 
+[2022-08-16 09:32:27.133][INFO ][20220816093226953] [rdid=20220816093226953] [04-process success     ] LabTime=     3(ms) ElapsedTime=   178(ms) 

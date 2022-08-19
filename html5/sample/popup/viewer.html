@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Popup Viewer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<script src="../../js/jquery-1.11.0.min.js"></script>
+		<script src="../../js/crownix-viewer.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/crownix-viewer.min.css">
+	</head>
+	<body style="margin:0px; padding:0px;">
+		<div id="crownix-viewer" style="position:absolute; width:100%; height:100%;"></div>
+		<script>
+			$(document).ready(function(){
+				var Util = m2soft.crownix.Util;
+				var serverUrl = Util.getUrlVar('server_url');
+				var mrdPath = Util.getUrlVar('mrd_path');
+				var mrdParam = Util.getUrlVar('mrd_param');
+				
+				var viewer = new m2soft.crownix.Viewer(serverUrl, 'crownix-viewer');
+				viewer.openFile(mrdPath, mrdParam);
+			});
+		</script>
+	</body>
+</html>
+
+

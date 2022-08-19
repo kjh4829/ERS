@@ -1,0 +1,20 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-06-03 13:46:25.561][INFO ][m2soft.ers.report.core.Server.shutDown(Server.java:141)]Shut down ERS-ReportingServer...

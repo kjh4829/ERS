@@ -1,0 +1,134 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-07-28 16:41:40.733][20220728164135843][RequestInfo]
+rdid=20220728164135843
+status=3
+message=null
+lastAccessTime=2022-07-28 16:41:35.805
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220728164140
+finish_milli_time=1658994100712
+start_time=20220728164135
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=4.868 (sec)
+mmlVersion=0
+start_milli_time=1658994095844
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-28 16:43:59.653][20220728164359063][RequestInfo]
+rdid=20220728164359063
+status=3
+message=null
+lastAccessTime=2022-07-28 16:43:59.062
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220728164359
+finish_milli_time=1658994239653
+start_time=20220728164359
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.59 (sec)
+mmlVersion=0
+start_milli_time=1658994239063
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-28 16:44:02.306][20220728164401791][RequestInfo]
+rdid=20220728164401791
+status=3
+message=null
+lastAccessTime=2022-07-28 16:44:01.791
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220728164402
+finish_milli_time=1658994242306
+start_time=20220728164401
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.515 (sec)
+mmlVersion=0
+start_milli_time=1658994241791
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-28 16:44:03.293][20220728164402872][RequestInfo]
+rdid=20220728164402872
+status=3
+message=null
+lastAccessTime=2022-07-28 16:44:02.871
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220728164403
+finish_milli_time=1658994243293
+start_time=20220728164402
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.421 (sec)
+mmlVersion=0
+start_milli_time=1658994242872
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-28 16:44:04.611][20220728164403796][RequestInfo]
+rdid=20220728164403796
+status=3
+message=null
+lastAccessTime=2022-07-28 16:44:03.794
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220728164404
+finish_milli_time=1658994244611
+start_time=20220728164403
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.815 (sec)
+mmlVersion=0
+start_milli_time=1658994243796
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html style="margin:0;height:100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix HTML5 Viewer</title>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/crownix-viewer.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/crownix-viewer.min.css">
+	</head>
+	<body style="margin:0;height:100%">
+		<div id="crownix-viewer" style="position:absolute;width:100%;height:100%"></div>
+		<script>
+			window.onload = function(){
+				viewer = new m2soft.crownix.Viewer('http://localhost:8081/ReportingServer/service', 'crownix-viewer');
+
+				    m2soft.crownix.Viewer.debug = true;
+
+		
+				viewer.openFile('AccRecPrt.mrd', '/rfn [AccRecPrt_로컬생성.xml] /rv P_1[납본] P_2[2022] P_3[Soongsil University 외] P_4[502] P_5[서양서] P_6[석사학위논문] P_7[50] P_8[50] P_9[WM0001053086] P_10[WM0001053135] P_11[2022/07/12] P_12[ ] P_13[KO] P_14[WM] P_20[장서개발과] P_21[사서서기] P_22[강혜선] P_23[2022/08/12] P_15[0 원] P_30[과장] P_31[장서개발과] P_32[국가서지과] P_33[] P_34[] P_40[하부용] P_41[곽수영] P_42[차경례] P_43[김인숙]  /rbarcodeimgdpi [900] /rxlsxdefault [1]'); 
+			};
+		</script>
+	</body>
+</html>

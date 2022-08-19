@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html style="margin:0;height:100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix HTML5 Viewer</title>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/crownix-viewer.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/crownix-viewer.min.css">
+	</head>
+	<body style="margin:0;height:100%">	
+		<button id="download_PDF">download to pdf</button>
+		<button id="download_JPG">download to jpg</button>
+		<button id="download_PNG">download to png</button>
+		<div id="crownix-viewer" style="position:absolute;width:100%;height:100%"></div>
+		<script>
+			window.onload = function(){
+				var viewer = new m2soft.crownix.Viewer('http://localhost:8081/ReportingServer/service', 'crownix-viewer',{toolbarScale:1});
+				viewer.openFile('sample.mrd', '/rfn [sample.txt]');
+
+				//확장자는 'pdf' , 'txt' , 'doc', 'xls', ,'xlsx', 'ppt', 'hwp', 'png', 'jpg', 'ods', 'odt' 가능
+				$("#download_PDF").click(function(){
+					viewer.downloadFile("pdf");
+				});
+				$("#download_JPG").click(function(){
+					viewer.downloadFile("jpg");
+				});
+				$("#download_PNG").click(function(){
+					viewer.downloadFile("png");
+				});
+
+				
+				//setDownloadFileName 대신에 옵션을 이용하여 파일명 변경 및 다운 가능
+				/*
+				//viewer.openFile('sample.mrd', '/rfn [sample.txt]', {downloadFileName : 'test987'});
+				*/
+
+				
+				//setDownloadFileName사용하여 파일명 변경 및 저장 (openFile 밑에 입력)
+				/*
+				//$("#setDownloadFileName").click(function(){
+				//viewer.setDownloadFileName('test1243');
+				//});
+				*/
+
+
+				//뷰어 화면에 슬라이드 메뉴가 나타나며 목차가 표시, 보고서에 목차를 지정 및 사용 가능
+				/*viewer.openFile('sample.mrd', '/rfn [sample.txt]', { useTableOfContents : true } );
+				viewer.openFile('sample.mrd', '/rfn [sample.txt]',
+				{ useTableOfContents : {
+						highlight :{ tree: '#FF0000', field: '#0000FF', pageSync : true } , mergeNode	: true }
+					});*/
+
+
+				};
+
+		</script>
+	</body>
+</html>

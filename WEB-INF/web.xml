@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+   version="2.4">
+	<display-name>ReportingServer</display-name>
+
+	<!-- Server Path -->
+	<!--
+		<context-param>
+			<param-name>server.home</param-name>
+			<param-value></param-value>
+		</context-param>
+
+		<context-param>
+			<param-name>server.license</param-name>
+			<param-value></param-value>
+		</context-param>
+
+		<context-param>
+			<param-name>server.config</param-name>
+			<param-value></param-value>
+		</context-param>
+
+		<context-param>
+			<param-name>server.log</param-name>
+			<param-value></param-value>
+		</context-param>
+	-->
+
+	<!-- Listener -->
+	<listener>
+		<listener-class>
+			m2soft.ers.report.core.servlet.RDContextListener
+		</listener-class>
+	</listener>
+
+	<!-- Servlets -->
+	
+	<!-- Jetty: Files are locked on Windows and can't be replaced -->
+	<!-- 
+	<servlet>
+		<servlet-name>default</servlet-name>
+		<servlet-class>org.mortbay.jetty.servlet.DefaultServlet</servlet-class>
+		<init-param>
+			<param-name>useFileMappedBuffer</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>dirAllowed</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	-->
+
+	<servlet>
+		<servlet-name>information</servlet-name>
+		<servlet-class>m2soft.ers.report.core.servlet.Information</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>service</servlet-name>
+		<servlet-class>m2soft.ers.report.core.servlet.Service</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>download</servlet-name>
+		<servlet-class>m2soft.ers.report.core.servlet.Download</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>manager</servlet-name>
+		<servlet-class>m2soft.ers.manager.server.ManagerServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>org.apache.axis2.transport.http.AxisServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>memory</servlet-name>
+		<servlet-class>m2soft.ers.manager.server.servlet.MemoryMonitoringServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>scheduler</servlet-name>
+		<servlet-class>m2soft.ers.report.core.scheduler.service.SchedulerServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>information</servlet-name>
+		<url-pattern>/information</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>information</servlet-name>
+		<url-pattern>/info</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>information</servlet-name>
+		<url-pattern>/info.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>scheduler</servlet-name>
+		<url-pattern>/manager/scheduler</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>service</servlet-name>
+		<url-pattern>/service</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>manager</servlet-name>
+		<url-pattern>/manager/manager</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/webservice/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>memory</servlet-name>
+		<url-pattern>/manager/images/memory</url-pattern>
+	</servlet-mapping>
+
+	<mime-mapping>
+		<extension>wsdl</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+
+   <!--  	
+	<filter>
+		<filter-name>GzipFilter</filter-name>
+		<filter-class>m2soft.ers.common.servlet.filter.GzipFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+      <filter-name>GzipFilter</filter-name>
+      <servlet-name>service</servlet-name>
+   </filter-mapping>
+   -->
+	<filter>
+		<filter-name>CryptoFilter</filter-name>
+		<filter-class>m2soft.ers.common.servlet.filter.CryptoFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CryptoFilter</filter-name>
+		<servlet-name>service</servlet-name>
+	</filter-mapping>
+
+	<!-- Default page -->
+	<welcome-file-list>
+		<welcome-file>info.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html style="margin:0;height:100%" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix HTML5 Viewer</title>
+		<script src="../../js/jquery-1.11.0.min.js"></script>
+		<!--[if !IE]><!-->
+		<script src="../../js/crownix-viewer.min.js"></script>
+		<!--<![endif]-->	
+		<!--[if gt IE 8]>
+		<script src="../../js/crownix-viewer.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8]>
+		<script src="../../js/crownix-viewer-ie8.min.js"></script>
+		<!--<![endif]-->
+		<link rel="stylesheet" type="text/css" href="../../css/crownix-viewer.min.css">
+	</head>
+	<body style="margin:0;height:100%">
+		<div id="crownix-viewer" style="position:absolute;width:100%;height:100%"></div>
+		<script>
+			window.onload = function(){
+				var viewer = new m2soft.crownix.Viewer('http://localhost:8080/ReportingServer/service', 'crownix-viewer');
+				viewer.openFile('sample.mrd', '/rfn [sample.txt]');
+			};
+		</script>
+	</body>
+</html>

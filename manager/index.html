@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="gwt:property" content="locale=ko">
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+
+<title>Enterprise Reporting System Manager</title>
+
+<!--CSS for loading message at application Startup-->
+<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="shortcut icon" href="images/icons/ers.ico">
+
+</head>
+
+<body>
+   <IFRAME id="fileUploadFrame" NAME="fileUploadFrame" style="width:0;height:0;border:0;display:none;"></IFRAME>
+	<div style="width: 100%; height: 100%; overflow: auto;">
+		<div id="container">
+			<div id="center"></div>
+		</div>
+	</div>
+	</div>
+	<div id="loadingWrapper">
+		<div id="loading">
+			<div class="loadingIndicator">
+				<img src="images/loading.png" width="50" height="50"
+					style="margin-right: 8px; float: left; vertical-align: top;" /> <br>Enterprise
+				Reporting System Manager<br /> <span id="loadingMsg">Loading
+					Core API...</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- IMPORTANT : You must set the variable isomorphicDir to [MODULE_NAME]/sc/ so that the SmartGWT resource are correctly resolved -->
+	<!-- <script> var isomorphicDir = "download?filename=RDServerManager/sc/"; </script>-->
+	<!-- TODO -->
+	<script>
+		var isomorphicDir = "sc/";
+	</script>
+
+	<script type="text/javascript" language="javascript"
+		src="manager.nocache.js"></script>
+
+	<!-- OPTIONAL: include this if you want history support -->
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+</body>
+</html>

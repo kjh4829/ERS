@@ -1,0 +1,1241 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=메디젠휴먼케어
+user.dir=C:\WINDOWS\system32
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-daemon.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-common.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\ant-1.6.5.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\core-3.1.1.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-util-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-api-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\servlet-api-2.5-20081211.jar
+file.encoding=EUC_KR
+user.language=ko
+]
+
+[2022-05-20 10:17:31.457][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520101727592][RequestInfo]
+rdid=20220520101727592
+status=2
+message=null
+lastAccessTime=2022-05-20 10:17:27.591
+mrd_param=/rfn [https://jeonib.andamc.com/DataServer/rdagent.jsp] /rsn [JEONIBDB] /rv admnYear[2022] admnNo[5944] bsrn[1018630215] inveDiviDesc[?????????,???????,?????????,??????????,???μ??????,??翹?????,????????,?????(????)????,???????,???????????,????????,????,?????湮????,????ι湮????,????????,???????????,????????,????????,???????,????????,????????,???????,???????,???????] inveDiviDescCnt[24] inveDivi1[Y] inveDivi2[Y] inveDivi3[Y] inveDivi4[Y] inveDivi5[Y] inveDivi6[Y] inveDivi7[Y] inveDivi8[Y] inveDivi9[Y] inveDivi10[Y] inveDivi11[Y] inveDivi12[Y] inveDivi13[Y] inveDivi14[Y] inveDivi15[N] inveDivi16[Y] inveDivi17[Y] inveDivi18[Y] inveDivi19[Y] inveDivi20[Y] inveDivi21[Y] inveDivi22[Y] inveDivi23[Y]  /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520101727
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653009447592
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.47
+mrd_path=FaticPhotView.mrd
+
+[2022-05-20 10:17:31.458][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520101727592]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.ArrayIndexOutOfBoundsException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 236
+	at m2soft.javard.mrd.DohStreamBuf.writeParagString(DohStreamBuf.java:1295)
+	at m2soft.javard.object.HTE_Parag._SaveYou(HTE_Parag.java:514)
+	at m2soft.javard.object.HTE_Frame._SaveYou(HTE_Frame.java:5265)
+	at m2soft.javard.object.HTE_Text._SaveYou(HTE_Text.java:272)
+	at m2soft.javard.object.HTE_Field._SaveYou(HTE_Field.java:841)
+	at m2soft.javard.object.TblCell._SaveYou(TblCell.java:1181)
+	at m2soft.javard.object.Table._SaveYou(Table.java:2943)
+	at m2soft.javard.mrd.KPageMap._SaveObjects(KPageMap.java:277)
+	at m2soft.javard.mrd.ReportGenerator._SwapOut(ReportGenerator.java:1399)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14311)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10862)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator._ProcessSubReport(ReportGenerator.java:9258)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10736)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 10:24:47.780][INFO ][m2soft.ers.report.core.Server.initializeServer(Server.java:107)]Started up ERS-ReportingServer...
+[2022-05-20 11:18:23.876][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520111823794][RequestInfo]
+rdid=20220520111823794
+status=2
+message=null
+lastAccessTime=2022-05-20 11:18:23.794
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520111823
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653013103794
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 11:18:23.876][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520111823794]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 11:19:03.014][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520111902958][RequestInfo]
+rdid=20220520111902958
+status=2
+message=null
+lastAccessTime=2022-05-20 11:19:02.957
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520111902
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653013142958
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 11:19:03.014][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520111902958]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 11:19:37.266][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520111937222][RequestInfo]
+rdid=20220520111937222
+status=2
+message=null
+lastAccessTime=2022-05-20 11:19:37.222
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520111937
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653013177222
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 11:19:37.266][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520111937222]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 11:20:19.484][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520112019445][RequestInfo]
+rdid=20220520112019445
+status=2
+message=null
+lastAccessTime=2022-05-20 11:20:19.445
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520112019
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653013219445
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 11:20:19.484][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520112019445]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 11:23:21.120][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520112321087][RequestInfo]
+rdid=20220520112321087
+status=2
+message=null
+lastAccessTime=2022-05-20 11:23:21.087
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520112321
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653013401087
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 11:23:21.120][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520112321087]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 13:21:46.512][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520132146374][RequestInfo]
+rdid=20220520132146374
+status=2
+message=null
+lastAccessTime=2022-05-20 13:21:46.374
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520132146
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653020506374
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:21:46.512][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520132146374]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 13:24:35.992][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520132435879][RequestInfo]
+rdid=20220520132435879
+status=2
+message=null
+lastAccessTime=2022-05-20 13:24:35.879
+mrd_param=/rdata [1]/rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520132435
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653020675879
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:24:35.993][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520132435879]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 13:25:23.553][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520132523511][RequestInfo]
+rdid=20220520132523511
+status=2
+message=null
+lastAccessTime=2022-05-20 13:25:23.511
+mrd_param=/rdata [1]/rusecxlib /rmmlopt [1] /rerroropt [2] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520132523
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653020723512
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:25:23.553][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520132523511]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 13:25:34.535][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520132534487][RequestInfo]
+rdid=20220520132534487
+status=2
+message=null
+lastAccessTime=2022-05-20 13:25:34.487
+mrd_param=/rdata [1]/rusecxlib /rmmlopt [1] /rerroropt [2] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520132534
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653020734487
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:25:34.535][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520132534487]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 13:31:33.218][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520133133158][RequestInfo]
+rdid=20220520133133158
+status=2
+message=null
+lastAccessTime=2022-05-20 13:31:33.158
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rimageopt resize [100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520133133
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653021093158
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:31:33.219][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520133133158]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.NullPointerException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.NullPointerException
+	at m2soft.javard.object.KBitmap._ResetCoord(KBitmap.java:2247)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:687)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:905)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:11021)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+[2022-05-20 13:41:24.256][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520134103510][RequestInfo]
+rdid=20220520134103510
+status=2
+message=null
+lastAccessTime=2022-05-20 13:41:03.510
+mrd_param=/rdata [1]/rusecxlib /rmmlopt [1] /rerroropt [3] /rimageopt resize[100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520134103
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653021663510
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:41:24.256][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520134103510]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more
+[2022-05-20 13:41:34.049][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520134121768][RequestInfo]
+rdid=20220520134121768
+status=2
+message=null
+lastAccessTime=2022-05-20 13:41:21.768
+mrd_param=/rdata [1] /rmmlopt [1] /rerroropt [3] /rimageopt resize[100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520134121
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653021681768
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:41:34.049][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520134121768]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more
+[2022-05-20 13:51:13.567][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520135100289][RequestInfo]
+rdid=20220520135100289
+status=2
+message=null
+lastAccessTime=2022-05-20 13:51:00.289
+mrd_param=/rdata [1] /rmmlopt [1] /rerroropt [3] /rimageopt resize[100]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520135100
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653022260289
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:51:13.567][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520135100289]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more
+[2022-05-20 13:51:37.780][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520135110900][RequestInfo]
+rdid=20220520135110900
+status=2
+message=null
+lastAccessTime=2022-05-20 13:51:10.900
+mrd_param=/rdata [1] /rmmlopt [1] /rerroropt [3] /rimageopt resize [50]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520135110
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653022270901
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:51:37.780][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520135110900]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more
+[2022-05-20 13:51:46.026][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520135135628][RequestInfo]
+rdid=20220520135135628
+status=2
+message=null
+lastAccessTime=2022-05-20 13:51:35.628
+mrd_param=/rdata [1] /rmmlopt [1] /rerroropt [3] /rimageopt resize [1000]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520135135
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653022295628
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 13:51:46.026][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520135135628]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more
+[2022-05-20 14:02:45.057][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520140228458][RequestInfo]
+rdid=20220520140228458
+status=2
+message=null
+lastAccessTime=2022-05-20 14:02:28.457
+mrd_param=/rdata [1]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520140228
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653022948458
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 14:02:45.057][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520140228458]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:372)
+	at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:811)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:740)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:407)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:385)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:282)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:135)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:220)
+	at java.io.Writer.write(Writer.java:157)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:792)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:663)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:512)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:456)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:623)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:121)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:225)
+	at org.apache.coyote.Response.doWrite(Response.java:600)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:360)
+	... 37 more
+[2022-05-20 14:02:54.364][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520140244610][RequestInfo]
+rdid=20220520140244610
+status=2
+message=null
+lastAccessTime=2022-05-20 14:02:44.610
+mrd_param=/rdata [1]
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520140244
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653022964610
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 14:02:54.364][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520140244610]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:372)
+	at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:811)
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:740)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:407)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:385)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:282)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:135)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:220)
+	at java.io.Writer.write(Writer.java:157)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:792)
+	at m2soft.javard.object.KBitmap.writeMml(KBitmap.java:663)
+	at m2soft.javard.object.TblCell.writeMml(TblCell.java:1871)
+	at m2soft.javard.object.Table.writeMml(Table.java:8438)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11490)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:512)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:456)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:623)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:121)
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:225)
+	at org.apache.coyote.Response.doWrite(Response.java:600)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:360)
+	... 37 more
+[2022-05-20 14:03:52.478][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520140342041][RequestInfo]
+rdid=20220520140342041
+status=2
+message=null
+lastAccessTime=2022-05-20 14:03:42.041
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] 
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520140342
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653023022041
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 14:03:52.478][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520140342041]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more
+[2022-05-20 14:03:58.772][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220520140351545][RequestInfo]
+rdid=20220520140351545
+status=2
+message=null
+lastAccessTime=2022-05-20 14:03:51.545
+mrd_param=/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] 
+opcode=700
+request_uri=http://192.168.10.162:8081/ReportingServer
+start_time=20220520140351
+protocol=sync
+remote_ip=192.168.10.162
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1653023031545
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+mrd_path=sample2.mrd
+
+[2022-05-20 14:03:58.772][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220520140351545]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(org.apache.catalina.connector.ClientAbortException)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:330)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:293)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at m2soft.javard.mrd.KPageMap.writeMmlPage(KPageMap.java:11569)
+	at m2soft.javard.export.MMLExporter.writePage(MMLExporter.java:263)
+	at m2soft.javard.mrd.ReportGenerator._MakePage(ReportGenerator.java:379)
+	at m2soft.javard.mrd.ReportGenerator.OnIdleProc(ReportGenerator.java:14478)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11051)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:470)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1308)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:692)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:645)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:635)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:646)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:166)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:252)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1376)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:405)
+	at org.apache.coyote.Response.action(Response.java:206)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:326)
+	... 26 more

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Popup Sample</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<script src="../../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#popup').click(function(){
+					window.open('./viewer.html?mrd_path=sample.mrd&mrd_param=/rfn [sample.txt]&server_url=http://localhost:8080/ReportingServer/service', 'ers_viewer', 'width=900,height=800');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="popup" value="execute" />
+	</body>
+</html>

@@ -1,0 +1,202 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=메디젠휴먼케어
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-07-13 15:46:37.699][20220713154633476][RequestInfo]
+rdid=20220713154633476
+status=4
+message=[ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.Exception)
+lastAccessTime=2022-07-13 15:46:33.468
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt],{saveMmlToPdf : true}
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154637
+finish_milli_time=1657694797685
+start_time=20220713154633
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+elapsed_time=4.206 (sec)
+mmlVersion=0
+start_milli_time=1657694793479
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:46:41.488][20220713154641032][RequestInfo]
+rdid=20220713154641032
+status=4
+message=[ERS-12101] 보고서 실행 중에 오류가 발생했습니다.(java.lang.Exception: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf)
+lastAccessTime=2022-07-13 15:46:41.031
+mrd_param=/rpdfprintdialog /rfn [http://localhost:8081/ReportingServer/mrd/sample.txt],{saveMmlToPdf : true} /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=pdf
+opcode=500
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154641
+finish_milli_time=1657694801488
+start_time=20220713154641
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Export
+elapsed_time=0.456 (sec)
+start_milli_time=1657694801032
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:47:18.203][20220713154717270][RequestInfo]
+rdid=20220713154717270
+status=3
+message=null
+lastAccessTime=2022-07-13 15:47:17.269
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154718
+finish_milli_time=1657694838203
+start_time=20220713154717
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.933 (sec)
+mmlVersion=0
+start_milli_time=1657694837270
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:47:39.905][20220713154739249][RequestInfo]
+rdid=20220713154739249
+status=3
+message=null
+lastAccessTime=2022-07-13 15:47:39.249
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154739
+finish_milli_time=1657694859896
+start_time=20220713154739
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.647 (sec)
+mmlVersion=0
+start_milli_time=1657694859249
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:48:00.417][20220713154759856][RequestInfo]
+rdid=20220713154759856
+status=3
+message=null
+lastAccessTime=2022-07-13 15:47:59.855
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154800
+finish_milli_time=1657694880416
+start_time=20220713154759
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.56 (sec)
+mmlVersion=0
+start_milli_time=1657694879856
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:48:06.365][20220713154805750][RequestInfo]
+rdid=20220713154805750
+status=3
+message=null
+lastAccessTime=2022-07-13 15:48:05.750
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154806
+finish_milli_time=1657694886364
+start_time=20220713154805
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.614 (sec)
+mmlVersion=0
+start_milli_time=1657694885750
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:48:29.066][20220713154828662][RequestInfo]
+rdid=20220713154828662
+status=3
+message=null
+lastAccessTime=2022-07-13 15:48:28.662
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt] 
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+finish_time=20220713154829
+finish_milli_time=1657694909066
+start_time=20220713154828
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+runtime_param=
+mrd_plain_param=
+elapsed_time=0.404 (sec)
+mmlVersion=0
+start_milli_time=1657694908662
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:48:32.902][20220713154831217][RequestInfo]
+rdid=20220713154831217
+status=3
+message=null
+lastAccessTime=2022-07-13 15:48:31.217
+mrd_param=/rpdfprintdialog /rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]  /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=pdf
+opcode=500
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+file_r_path=2022/07/13/20220713154831217.pdf
+finish_time=20220713154832
+finish_milli_time=1657694912902
+start_time=20220713154831
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Post Processing
+export_page=18
+elapsed_time=1.685 (sec)
+start_milli_time=1657694911217
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+file_a_path=C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/07/13/20220713154831217.pdf
+

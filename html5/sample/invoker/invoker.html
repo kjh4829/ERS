@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html style="margin: 0; height: 100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix ReportingServer Invoker</title>
+		<script src="../../js/invoker/crownix-invoker.min.js"></script>
+		<script>
+			window.onload = function(){
+			for(){
+				var invoker = new m2soft.crownix.ReportingServerInvoker('http://localhost:8081/ReportingServer/service');
+				invoker.addParameter('opcode', '500');
+				invoker.addParameter('mrd_path', 'http://localhost:8081/ReportingServer/mrd/sample.mrd');
+				invoker.addParameter('mrd_param', '/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]');
+				invoker.addParameter('export_type', 'pdf');
+				invoker.addParameter('protocol', 'sync');
+				
+				invoker.invoke(function(response, xhr) {
+					document.getElementById('response').innerText = response;	
+				});
+			}
+			};
+		</script>
+	</head>
+	<body style="margin: 0; height: 100%">
+		<div id="response" style="position:absolute; width:100%; height:100%;">
+		</div>
+	</body>
+</html>

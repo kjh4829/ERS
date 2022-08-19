@@ -1,0 +1,1 @@
+/rtempdir /riprnmargin /rincludefile [http://10.1.50.130:6000/kirams/miplatform/common/mrdFiles/A4_Horizontal.mrd] /rxlspagezoom [98] /rbrowsingopt [1] /rnpu /rwait  /rv param1[한국원자력의학원] param2[전산정보팀] param3[출퇴근내역] param4[GPA304F1] param5[기간 : 2022-05-23~2022-05-23] param6[] param7[] param8[Y] param9[20120198  172.17.151.109]  /rdebugmode [1]

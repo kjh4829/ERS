@@ -1,0 +1,78 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=메디젠휴먼케어
+user.dir=C:\WINDOWS\system32
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-daemon.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-common.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\ant-1.6.5.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\core-3.1.1.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-util-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-api-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\servlet-api-2.5-20081211.jar
+file.encoding=EUC_KR
+user.language=ko
+]
+
+[2022-08-04 08:53:37.336][INFO ][m2soft.ers.report.core.Server.shutDown(Server.java:141)]Shut down ERS-ReportingServer...
+[2022-08-04 08:53:41.516][INFO ][m2soft.ers.report.core.Server.shutDown(Server.java:141)]Shut down ERS-ReportingServer...
+[2022-08-04 08:54:19.066][INFO ][m2soft.ers.report.core.Server.initializeServer(Server.java:107)]Started up ERS-ReportingServer...
+[2022-08-04 08:55:09.280][INFO ][m2soft.ers.report.core.Server.initializeServer(Server.java:107)]Started up ERS-ReportingServer...
+[2022-08-04 16:28:15.536][ERROR][m2soft.ers.report.core.servlet.Service.doService(Service.java:111)][20220804162815450][ERS-10010] 라이선스 위반. 잘못된 요청입니다.(Export type: pdf,mml, License Infomation {
+   isDemo : true
+   demoTerm : 20220421~20270421
+   isExpired : false
+   volumeID : F822-EF99
+   company name : 메디젠휴먼케어
+   export type : mrr, xls, xlsx, csv, cell, pdf, png, jpg, tif, bmp, j2k, gif, hwp, ppt, pptx, doc, docx, txt, mrrml, xml, odt, odp, ods, rtf, html, html5, mrx, brl, 
+   server type : DataServer(0), ReportingServer(1), DeliveryServer(2), MobileServer(3), RepositoryServer(4), InfotalkServer(5), ReportPortal(6), ShareServer(7), 
+   viewer type : FlashViewer(0), HTML5Viewer(1), 
+   feature type : FormField, Note, Certification, MultiInstance, 
+}
+)
+m2soft.ers.report.core.RDException: [ERS-10010] 라이선스 위반. 잘못된 요청입니다.(Export type: pdf,mml, License Infomation {
+   isDemo : true
+   demoTerm : 20220421~20270421
+   isExpired : false
+   volumeID : F822-EF99
+   company name : 메디젠휴먼케어
+   export type : mrr, xls, xlsx, csv, cell, pdf, png, jpg, tif, bmp, j2k, gif, hwp, ppt, pptx, doc, docx, txt, mrrml, xml, odt, odp, ods, rtf, html, html5, mrx, brl, 
+   server type : DataServer(0), ReportingServer(1), DeliveryServer(2), MobileServer(3), RepositoryServer(4), InfotalkServer(5), ReportPortal(6), ShareServer(7), 
+   viewer type : FlashViewer(0), HTML5Viewer(1), 
+   feature type : FormField, Note, Certification, MultiInstance, 
+}
+)
+	at m2soft.ers.report.core.processor.AbstractHttpProcessor.checkLicense(AbstractHttpProcessor.java:68)
+	at m2soft.ers.report.core.processor.HttpHandlerProcessor.process(HttpHandlerProcessor.java:51)
+	at m2soft.ers.report.core.servlet.Service.doService(Service.java:105)
+	at m2soft.ers.report.core.servlet.Service.doPost(Service.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at m2soft.ers.common.servlet.filter.CryptoFilter.doFilter(CryptoFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

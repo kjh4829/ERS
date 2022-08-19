@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html style="margin: 0; height: 100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix ReportingServer Invoker</title>
+		<script src="../../js/jquery-1.11.0.min.js"></script>
+		<script src="../../js/invoker/crownix-invoker.min.js"></script>
+		<script>
+			function download() {
+				var inv = new m2soft.crownix.DownloadInvoker(['pdf', 'hwp', 'doc', 'ppt']);
+				inv.show('http://localhost:8080/ReportingServer/service', 'http://localhost:8080/ReportingServer/download', 'sample.mrd', '/rfn [sample.txt]');
+			}
+		</script>
+	</head>
+	<body style="margin: 0; height: 100%">
+		<Button onclick="download();">Download Dialog</Button>
+	</body>
+</html>

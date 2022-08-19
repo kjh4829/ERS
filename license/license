@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<license>
+	<supplyNumber>
+		M2Soft-220421-A071-A071-0086
+	</supplyNumber>
+	<serial>
+		3F09-7E03-A303-42AB
+	</serial>
+	<generatedBy>
+		MINERVA
+	</generatedBy>
+	<version>
+		7.0
+	</version>
+	<user>
+		0 Unlimited
+	</user>
+	<kind>
+		TEST (20220421~20270421)
+	</kind>
+	<companyName>
+		메디젠휴먼케어
+	</companyName>
+	<core>
+		null
+	</core>
+	<volumeID>
+		null
+	</volumeID>
+	<exportType>
+		[mrr, xls, xlsx, csv, cell, pdf, png, jpg, tif, bmp, j2k, gif, hwp, ppt, pptx, doc, docx, txt, mrrml, xml, odt, odp, ods, rtf, html, html5, mrx, brl]
+	</exportType>
+	<serverType>
+		[DataServer(0), ReportingServer(1), DeliveryServer(2), MobileServer(3), RepositoryServer(4)]
+		[InfotalkServer(5), ReportPortal(6), ShareServer(7), FormServer(8), AdminConsole(9), ProxyServer(10)]
+	</serverType>
+	<serverSideViewerType>
+		[FlashViewer(0), HTML5Viewer(1)]
+	</serverSideViewerType>
+	<featureType>
+		[FormField, Note, Certification, MultiInstance, Spool]
+	</featureType>
+	<data>
+CwJQMQYwJQMgMwJQZRAgMwZQJQYQOAbwJQZAMgQgJQZgMRExBQZgNREwNwJQMAOBEwNhEwNBEwMhDxIgYgYQJQYxCgMRCgMAZgJQNxLRIAZBKAYRGwZhBQZAYxIAZRLwZhIAYgNAcgaRCxIhCRBhLwZAMAbBBgOQaAYxGxQRABNxNxHgORQAZBExWQMhJANRAgOBGQOBWRJxABIAMhIgOBJAMgYhMBAgZhGwMBIgORCgZhJAYhAgZQMwTgJRYAcxfAOQJQMxKBdQahAxgAYQMwUwdRDxHhOhExGQZBWQZRbAYhGQORFQNRLwMxWxCgORIgYxagZAWhABFQNgMBfBBQZRgAYgMQVgJQYgOQRhjBTAZBbAMRGQYQNAegVBHBHhlRpwYxpwMRLwNxLwMBqRHhbwdBCxGxXhIxHBbAZhAgMBChrBHBGRUBExqwNhNxKBYgRRJRrxBQORSQNBLwYQYQUBABSRbAYRpxShKRIAMRHgYRJANAMBthORHgMhXxAgMRKAZBChNBgRWROBBhGR1AJR9xAxJAYRhxgAYxkBFQMRgBPxgSDhBhAgZBLwZQYRrgMhKB8xCxWRNgJQORGwYxgAOAYwURHBGwMgNQSxfBFQZhPhFQMBGxniJhFxcBbANx0RHiFBrwNwKxix7hBgNwTgSxAgYhJBngRBIRjRMwYw
+	</data>
+</license>

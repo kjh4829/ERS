@@ -1,0 +1,171 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-06-03 11:09:08.738][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603110908726][RequestInfo]
+rdid=20220603110908726
+status=0
+message=null
+lastAccessTime=2022-06-03 11:09:08.721
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220603110908
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654222148727
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 11:09:08.846][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603110908726]Put in Queue(0/100)
+[2022-06-03 11:09:08.847][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603110908726]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 11:10:45.096][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603111045095][RequestInfo]
+rdid=20220603111045095
+status=0
+message=null
+lastAccessTime=2022-06-03 11:10:45.095
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220603111045
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654222245095
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 11:10:45.096][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603111045095]Put in Queue(0/100)
+[2022-06-03 11:10:45.097][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603111045095]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 11:10:49.296][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603111049295][RequestInfo]
+rdid=20220603111049295
+status=0
+message=null
+lastAccessTime=2022-06-03 11:10:49.295
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220603111049
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654222249295
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 11:10:49.296][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603111049295]Put in Queue(0/100)
+[2022-06-03 11:10:49.297][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603111049295]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 11:10:58.251][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603111058250][RequestInfo]
+rdid=20220603111058250
+status=0
+message=null
+lastAccessTime=2022-06-03 11:10:58.250
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220603111058
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654222258250
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 11:10:58.252][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603111058250]Put in Queue(0/100)
+[2022-06-03 11:10:58.252][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603111058250]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 13:33:49.252][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603133349251][RequestInfo]
+rdid=20220603133349251
+status=0
+message=null
+lastAccessTime=2022-06-03 13:33:49.250
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220603133349
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654230829251
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 13:33:49.253][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603133349251]Put in Queue(0/100)
+[2022-06-03 13:33:49.254][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603133349251]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 13:35:57.792][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603133557791][RequestInfo]
+rdid=20220603133557791
+status=0
+message=null
+lastAccessTime=2022-06-03 13:35:57.789
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220603133557
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654230957791
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=Starnet/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 13:35:57.793][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603133557791]Put in Queue(0/100)
+[2022-06-03 13:35:57.794][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603133557791]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 13:36:15.398][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220603133615398][RequestInfo]
+rdid=20220603133615398
+status=0
+message=null
+lastAccessTime=2022-06-03 13:36:15.397
+mrd_param=/rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=pdf
+start_time=20220603133615
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+start_milli_time=1654230975398
+opcode=500
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=Starnet/rptPDMJigStatusListReportSM.mrd
+
+[2022-06-03 13:36:15.424][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220603133615398]Put in Queue(0/100)
+[2022-06-03 13:36:15.424][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220603133615398]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-06-03 13:36:15.425][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220603133615398]export start: Starnet/rptPDMJigStatusListReportSM.mrd
+[2022-06-03 13:36:15.433][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220603133615398]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rp [2694000419][http://121.141.203.208/ReportAspx/PDM/pbox2_06_0.jpg] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko])
+[2022-06-03 13:36:15.878][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220603133615398]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\06\03\20220603133615398.pdf)
+fileRelativePath=2022/06/03/20220603133615398.pdf
+
+[2022-06-03 13:36:27.552][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220603133615398]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/06/03/20220603133615398.pdf
+[2022-06-03 13:36:27.552][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220603133615398]Executer return(totalPage):1

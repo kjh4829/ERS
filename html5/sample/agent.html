@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html style="margin:0;height:100%">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<script src="http://localhost:8081/ReportingServer/html5/js/jquery-1.11.0.min.js"></script>
+</head>
+<script>
+// HTML에서 submit을 클릭할 경우 호출
+window.onload = function() {
+// URL은 미리 정의
+var requestUrl = "http://127.0.0.1:6580/CxClientAgent/service/";
+// mrd는 리스트로 append 할 수 있습니다.
+var mrdList =
+[
+{mrdPath : "http://localhost:8081/ReportingServer/mrd/sample2.mrd", mrdParam : "/rdata [1] /rloadimageopt [1]"}
+];
+// mrd 오픈 후 1번째 저장은 pdf로, 2번째 저장은 png
+var exportList = [
+{exporttype : "pdf"}
+];
+// 리스트로 전달하고 결과는 APIResult 키에 포함된 결과로 전달 받습니다.
+var apiList = [
+{api:"GetTotalPageNo", args:""},{api : "setPrint2", args : "9,2,0,100"}
+];
+
+var prnOptList = [
+{PrnDrvName : "SINDOH D410 Series PCL", Copy : "2" }
+];
+
+
+var requestData = {
+mrdList : mrdList, // 필수
+opcode : "preview", // 필수
+prnOptionList : prnOptList,// 필수
+previewOption : {"topMost": false,"width": 1000,"height": 1000,"title": "ClientAgent","zoomRatio": 100
+},
+apiList : apiList // 옵션 (API 실행 요청)
+};
+$.ajax({
+type: "POST", // http method
+url: requestUrl, // http url
+data : JSON.stringify(requestData),
+dataType : "text",
+contentType: "application/x-www-form-urlencoded; charset=UTF-8;",
+
+error : function(request, status) {
+if(status=="error")
+{
+// 여기에 에러가 발생하는 경우에 대한 동작을 코드로 작성합니다.
+alert("Crownix Client Agent가 설치되어 있는지 확인하세요!!");
+}
+},
+success: function(response) {
+// 전송이 완료된 경우 응답을 받음
+var responseStr = jQuery.parseJSON(response.responseText);
+alert(responseStr);
+}
+});
+return false;
+}
+</script>
+</html>

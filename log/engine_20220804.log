@@ -1,0 +1,430 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=메디젠휴먼케어
+user.dir=C:\WINDOWS\system32
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-daemon.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-common.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\ant-1.6.5.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\core-3.1.1.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-util-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-api-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\servlet-api-2.5-20081211.jar
+file.encoding=EUC_KR
+user.language=ko
+]
+
+[2022-08-04 10:26:14.971][DEBUG][20220804102613867][INIT] create ServerSideRD - 893|7(ms),null,
+[2022-08-04 10:26:15.595][DEBUG][20220804102613867][OPEN] before CMFileOpen - 0|517|1|68|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:16.461][DEBUG][20220804102613867][OPEN] before processForHaveDBConnectInfo - 2|848|0|12(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:16.822][DEBUG][20220804102613867][DBService] Datasource Connection(0) - 11(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:16.834][DEBUG][20220804102613867][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:16.835][DEBUG][20220804102613867][OPEN] before _MakeReport - 22|319|31|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:16.845][DEBUG][20220804102613867][DBService] Datasource Fetch Data [ret:0 time:7 page:0 name: SerialID:3 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:16.891][WARN ][20220804102613867]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3449)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:838)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:176)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportMultiRequest(MultiViewerForHtml5.java:100)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.report(Html5MultiRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.process(Html5MultiRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-08-04 10:26:18.027][DEBUG][20220804102613867][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda18216323072142204073\sample.mrd,
+[2022-08-04 10:26:31.603][DEBUG][20220804102613867][INIT] create ServerSideRD - 4|0(ms),null,
+[2022-08-04 11:21:06.827][DEBUG][20220804112106818][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 11:21:06.847][DEBUG][20220804112106818][OPEN] before CMFileOpen - 0|6|0|11|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:06.884][DEBUG][20220804112106818][OPEN] before processForHaveDBConnectInfo - 1|34|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:06.952][DEBUG][20220804112106818][DBService] Datasource Connection(0) - 19(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:06.953][DEBUG][20220804112106818][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:06.954][DEBUG][20220804112106818][OPEN] before _MakeReport - 4|44|20|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:06.969][DEBUG][20220804112106818][DBService] Datasource Fetch Data [ret:0 time:14 page:0 name: SerialID:10 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:06.983][WARN ][20220804112106818]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3449)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:838)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:176)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportMultiRequest(MultiViewerForHtml5.java:100)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.report(Html5MultiRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.process(Html5MultiRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-08-04 11:21:07.635][DEBUG][20220804112106818][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda591192220282850170\sample.mrd,
+[2022-08-04 11:21:53.020][DEBUG][20220804112153013][INIT] create ServerSideRD - 3|0(ms),null,
+[2022-08-04 11:21:53.037][DEBUG][20220804112153013][OPEN] before CMFileOpen - 0|3|0|12|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:21:53.054][DEBUG][20220804112153013][OPEN] before processForHaveDBConnectInfo - 0|16|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:21:53.087][DEBUG][20220804112153013][DBService] Datasource Connection(0) - 12(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:21:53.088][DEBUG][20220804112153013][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:21:53.088][DEBUG][20220804112153013][OPEN] before _MakeReport - 3|18|13|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:21:53.093][DEBUG][20220804112153013][DBService] Datasource Fetch Data [ret:0 time:5 page:0 name: SerialID:15 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:21:53.103][WARN ][20220804112153013]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3449)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:838)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:176)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportMultiRequest(MultiViewerForHtml5.java:100)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.report(Html5MultiRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.process(Html5MultiRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-08-04 11:21:53.595][DEBUG][20220804112153013][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda16317186151182115260\sample.mrd,
+[2022-08-04 11:22:03.699][DEBUG][20220804112203694][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 11:22:03.712][DEBUG][20220804112203694][OPEN] before CMFileOpen - 0|4|0|6|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 11:22:03.723][DEBUG][20220804112203694][OPEN] before processForHaveDBConnectInfo - 0|9|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 11:22:03.742][DEBUG][20220804112203694][DBService] Datasource Connection(0) - 8(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 11:22:03.742][DEBUG][20220804112203694][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 11:22:03.743][DEBUG][20220804112203694][OPEN] before _MakeReport - 1|10|9|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 11:22:03.750][DEBUG][20220804112203694][DBService] Datasource Fetch Data [ret:0 time:6 page:0 name: SerialID:20 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 11:22:03.757][WARN ][20220804112203694]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3449)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:838)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:176)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportMultiRequest(MultiViewerForHtml5.java:100)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.report(Html5MultiRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.process(Html5MultiRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-08-04 11:22:04.075][DEBUG][20220804112203694][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda812809261-687070672\sample.mrd,
+[2022-08-04 16:27:18.821][DEBUG][20220804162718817][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 16:27:18.828][DEBUG][20220804162718817][OPEN] before CMFileOpen - 0|5|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:27:18.849][DEBUG][20220804162718817][OPEN] before processForHaveDBConnectInfo - 1|15|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:27:18.865][DEBUG][20220804162718817][DBService] Datasource Connection(0) - 2(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:27:18.866][DEBUG][20220804162718817][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:27:18.866][DEBUG][20220804162718817][OPEN] before _MakeReport - 0|14|3|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:27:18.869][DEBUG][20220804162718817][DBService] Datasource Fetch Data [ret:0 time:3 page:0 name: SerialID:25 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:27:19.174][DEBUG][20220804162718817][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.144][DEBUG][20220804162824140][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 16:28:24.149][DEBUG][20220804162824140][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.158][DEBUG][20220804162824140][OPEN] before processForHaveDBConnectInfo - 1|7|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.169][DEBUG][20220804162824140][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.169][DEBUG][20220804162824140][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.169][DEBUG][20220804162824140][OPEN] before _MakeReport - 0|8|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.173][DEBUG][20220804162824140][DBService] Datasource Fetch Data [ret:0 time:4 page:0 name: SerialID:30 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:24.345][DEBUG][20220804162824140][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:26.376][DEBUG][20220804162824140][SAVE][PDF] open: 0, swapin: 56, save: 760(totPg:18,longestPg:1,longestTime:251), close: 1007, total: 2003(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:33.913][DEBUG][20220804162833910][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:28:33.918][DEBUG][20220804162833910][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:33.925][DEBUG][20220804162833910][OPEN] before processForHaveDBConnectInfo - 1|5|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:33.930][DEBUG][20220804162833910][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:33.930][DEBUG][20220804162833910][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:33.930][DEBUG][20220804162833910][OPEN] before _MakeReport - 0|4|1|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:33.933][DEBUG][20220804162833910][DBService] Datasource Fetch Data [ret:0 time:3 page:0 name: SerialID:35 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:34.054][DEBUG][20220804162833910][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:28:35.450][DEBUG][20220804162833910][SAVE][PDF] open: 0, swapin: 53, save: 325(totPg:18,longestPg:1,longestTime:55), close: 972, total: 1395(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.413][DEBUG][20220804163249408][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:32:49.418][DEBUG][20220804163249408][OPEN] before CMFileOpen - 0|3|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.423][DEBUG][20220804163249408][OPEN] before processForHaveDBConnectInfo - 1|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.429][DEBUG][20220804163249408][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.429][DEBUG][20220804163249408][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.429][DEBUG][20220804163249408][OPEN] before _MakeReport - 0|4|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.431][DEBUG][20220804163249408][DBService] Datasource Fetch Data [ret:0 time:2 page:0 name: SerialID:40 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:49.537][DEBUG][20220804163249408][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:32:50.622][DEBUG][20220804163249408][SAVE][PDF] open: 0, swapin: 53, save: 198(totPg:18,longestPg:13,longestTime:14), close: 782, total: 1082(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:35:17.125][DEBUG][20220804163517123][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:35:17.128][DEBUG][20220804163517123][OPEN] before CMFileOpen - 0|2|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:17.140][DEBUG][20220804163517123][OPEN] before processForHaveDBConnectInfo - 0|10|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:17.143][DEBUG][20220804163517123][DBService] Datasource Connection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:17.144][DEBUG][20220804163517123][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:17.144][DEBUG][20220804163517123][OPEN] before _MakeReport - 0|2|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:17.146][DEBUG][20220804163517123][DBService] Datasource Fetch Data [ret:0 time:2 page:0 name: SerialID:45 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:17.230][DEBUG][20220804163517123][DBService] Datasource Disconnection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:35:18.140][DEBUG][20220804163517123][SAVE][PDF] open: 0, swapin: 35, save: 154(totPg:18,longestPg:1,longestTime:12), close: 648, total: 909(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.645][DEBUG][20220804163657638][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:36:57.649][DEBUG][20220804163657638][OPEN] before CMFileOpen - 0|3|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.657][DEBUG][20220804163657638][OPEN] before processForHaveDBConnectInfo - 1|6|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.662][DEBUG][20220804163657638][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.662][DEBUG][20220804163657638][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.662][DEBUG][20220804163657638][OPEN] before _MakeReport - 0|4|1|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.664][DEBUG][20220804163657638][DBService] Datasource Fetch Data [ret:0 time:2 page:0 name: SerialID:50 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:57.778][DEBUG][20220804163657638][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:36:58.586][DEBUG][20220804163657638][SAVE][PDF] open: 0, swapin: 32, save: 147(totPg:18,longestPg:1,longestTime:12), close: 599, total: 808(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.280][DEBUG][20220804164250276][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 16:42:50.285][DEBUG][20220804164250276][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.293][DEBUG][20220804164250276][OPEN] before processForHaveDBConnectInfo - 1|6|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.299][DEBUG][20220804164250276][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.299][DEBUG][20220804164250276][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.299][DEBUG][20220804164250276][OPEN] before _MakeReport - 0|4|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.302][DEBUG][20220804164250276][DBService] Datasource Fetch Data [ret:0 time:3 page:0 name: SerialID:55 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:50.417][DEBUG][20220804164250276][DBService] Datasource Disconnection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:42:51.261][DEBUG][20220804164250276][SAVE][PDF] open: 0, swapin: 30, save: 157(totPg:18,longestPg:1,longestTime:38), close: 623, total: 842(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:43:09.487][DEBUG][20220804164309483][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:43:09.493][DEBUG][20220804164309483][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:09.498][DEBUG][20220804164309483][OPEN] before processForHaveDBConnectInfo - 0|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:09.505][DEBUG][20220804164309483][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:09.505][DEBUG][20220804164309483][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:09.506][DEBUG][20220804164309483][OPEN] before _MakeReport - 0|5|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:09.507][DEBUG][20220804164309483][DBService] Datasource Fetch Data [ret:0 time:1 page:0 name: SerialID:60 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:09.636][DEBUG][20220804164309483][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:10.456][DEBUG][20220804164309483][SAVE][PDF] open: 0, swapin: 32, save: 150(totPg:18,longestPg:18,longestTime:15), close: 605, total: 818(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.489][DEBUG][20220804164314486][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:43:14.494][DEBUG][20220804164314486][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.499][DEBUG][20220804164314486][OPEN] before processForHaveDBConnectInfo - 1|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.504][DEBUG][20220804164314486][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.505][DEBUG][20220804164314486][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.505][DEBUG][20220804164314486][OPEN] before _MakeReport - 0|4|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.506][DEBUG][20220804164314486][DBService] Datasource Fetch Data [ret:0 time:1 page:0 name: SerialID:65 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:14.630][DEBUG][20220804164314486][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:15.486][DEBUG][20220804164314486][SAVE][PDF] open: 0, swapin: 30, save: 195(totPg:18,longestPg:1,longestTime:49), close: 600, total: 853(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.693][DEBUG][20220804164331689][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:43:31.698][DEBUG][20220804164331689][OPEN] before CMFileOpen - 1|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.706][DEBUG][20220804164331689][OPEN] before processForHaveDBConnectInfo - 0|7|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.713][DEBUG][20220804164331689][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.714][DEBUG][20220804164331689][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.714][DEBUG][20220804164331689][OPEN] before _MakeReport - 0|5|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.717][DEBUG][20220804164331689][DBService] Datasource Fetch Data [ret:0 time:3 page:0 name: SerialID:70 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:31.835][DEBUG][20220804164331689][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:43:32.683][DEBUG][20220804164331689][SAVE][PDF] open: 0, swapin: 48, save: 166(totPg:18,longestPg:1,longestTime:13), close: 594, total: 846(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 16:44:32.520][DEBUG][20220804164432516][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:44:32.525][DEBUG][20220804164432516][OPEN] before CMFileOpen - 0|5|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:32.530][DEBUG][20220804164432516][OPEN] before processForHaveDBConnectInfo - 1|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:32.535][DEBUG][20220804164432516][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:32.536][DEBUG][20220804164432516][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:32.536][DEBUG][20220804164432516][OPEN] before _MakeReport - 0|3|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:32.538][DEBUG][20220804164432516][DBService] Datasource Fetch Data [ret:0 time:2 page:0 name: SerialID:75 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:32.669][DEBUG][20220804164432516][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:33.926][DEBUG][20220804164432516][SAVE][PDF] open: 0, swapin: 59, save: 200(totPg:18,longestPg:16,longestTime:15), close: 949, total: 1255(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.469][DEBUG][20220804164449465][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 16:44:49.473][DEBUG][20220804164449465][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.478][DEBUG][20220804164449465][OPEN] before processForHaveDBConnectInfo - 1|3|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.484][DEBUG][20220804164449465][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.484][DEBUG][20220804164449465][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.484][DEBUG][20220804164449465][OPEN] before _MakeReport - 0|4|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.486][DEBUG][20220804164449465][DBService] Datasource Fetch Data [ret:0 time:1 page:0 name: SerialID:80 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:49.590][DEBUG][20220804164449465][DBService] Datasource Disconnection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:44:50.405][DEBUG][20220804164449465][SAVE][PDF] open: 0, swapin: 26, save: 135(totPg:18,longestPg:1,longestTime:10), close: 625, total: 814(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.081][DEBUG][20220804164524078][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:45:24.084][DEBUG][20220804164524078][OPEN] before CMFileOpen - 0|2|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.089][DEBUG][20220804164524078][OPEN] before processForHaveDBConnectInfo - 0|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.092][DEBUG][20220804164524078][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.094][DEBUG][20220804164524078][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.094][DEBUG][20220804164524078][OPEN] before _MakeReport - 0|2|3|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.095][DEBUG][20220804164524078][DBService] Datasource Fetch Data [ret:0 time:1 page:0 name: SerialID:85 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:24.191][DEBUG][20220804164524078][DBService] Datasource Disconnection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:25.056][DEBUG][20220804164524078][SAVE][PDF] open: 0, swapin: 28, save: 149(totPg:18,longestPg:1,longestTime:37), close: 656, total: 864(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.653][DEBUG][20220804164545651][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 16:45:45.657][DEBUG][20220804164545651][OPEN] before CMFileOpen - 0|3|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.662][DEBUG][20220804164545651][OPEN] before processForHaveDBConnectInfo - 1|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.667][DEBUG][20220804164545651][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.667][DEBUG][20220804164545651][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.667][DEBUG][20220804164545651][OPEN] before _MakeReport - 0|4|1|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.669][DEBUG][20220804164545651][DBService] Datasource Fetch Data [ret:0 time:1 page:0 name: SerialID:90 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:45.775][DEBUG][20220804164545651][DBService] Datasource Disconnection(0) - 0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:45:46.958][DEBUG][20220804164545651][SAVE][PDF] open: 0, swapin: 49, save: 163(totPg:18,longestPg:7,longestTime:12), close: 883, total: 1182(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,
+[2022-08-04 16:48:25.985][DEBUG][20220804164825981][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 16:48:26.000][DEBUG][20220804164825981][OPEN] before CMFileOpen - 0|3|0|11|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 16:48:26.006][DEBUG][20220804164825981][OPEN] before processForHaveDBConnectInfo - 0|5|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 16:48:26.026][DEBUG][20220804164825981][DBService] Datasource Connection(0) - 6(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 16:48:26.027][DEBUG][20220804164825981][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 16:48:26.027][DEBUG][20220804164825981][OPEN] before _MakeReport - 3|11|7|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 16:48:26.031][DEBUG][20220804164825981][DBService] Datasource Fetch Data [ret:0 time:4 page:0 name: SerialID:95 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 16:48:26.038][WARN ][20220804164825981]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3449)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:838)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:176)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportMultiRequest(MultiViewerForHtml5.java:100)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.report(Html5MultiRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5MultiRequestHandler.process(Html5MultiRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-08-04 16:48:26.241][DEBUG][20220804164825981][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda757237158-235277079\sample.mrd,
+[2022-08-04 17:19:43.466][DEBUG][20220804171943435][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 17:19:43.472][DEBUG][20220804171943435][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:43.480][DEBUG][20220804171943435][OPEN] before processForHaveDBConnectInfo - 1|6|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:43.490][DEBUG][20220804171943435][DBService] Datasource Connection(0) - 2(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:43.490][DEBUG][20220804171943435][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:43.490][DEBUG][20220804171943435][OPEN] before _MakeReport - 1|7|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:43.493][DEBUG][20220804171943435][DBService] Datasource Fetch Data [ret:0 time:3 page:0 name: SerialID:100 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:43.792][DEBUG][20220804171943435][DBService] Datasource Disconnection(0) - 6(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.361][DEBUG][20220804171947358][INIT] create ServerSideRD - 1|0(ms),null,
+[2022-08-04 17:19:47.366][DEBUG][20220804171947358][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.373][DEBUG][20220804171947358][OPEN] before processForHaveDBConnectInfo - 1|5|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.377][DEBUG][20220804171947358][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.377][DEBUG][20220804171947358][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.377][DEBUG][20220804171947358][OPEN] before _MakeReport - 0|3|1|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.378][DEBUG][20220804171947358][DBService] Datasource Fetch Data [ret:0 time:1 page:0 name: SerialID:105 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:19:47.486][DEBUG][20220804171947358][DBService] Datasource Disconnection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.468][DEBUG][20220804172000463][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-08-04 17:20:00.473][DEBUG][20220804172000463][OPEN] before CMFileOpen - 0|4|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.478][DEBUG][20220804172000463][OPEN] before processForHaveDBConnectInfo - 0|4|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.483][DEBUG][20220804172000463][DBService] Datasource Connection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.483][DEBUG][20220804172000463][DBService] Datasource Select Query[ret:0 time:0 query: null],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.483][DEBUG][20220804172000463][OPEN] before _MakeReport - 0|3|2|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.485][DEBUG][20220804172000463][DBService] Datasource Fetch Data [ret:0 time:2 page:0 name: SerialID:110 count:18],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,
+[2022-08-04 17:20:00.593][DEBUG][20220804172000463][DBService] Datasource Disconnection(0) - 1(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,

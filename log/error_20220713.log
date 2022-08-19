@@ -1,0 +1,166 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=메디젠휴먼케어
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-07-13 15:46:37.678][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220713154633476][RequestInfo]
+rdid=20220713154633476
+status=2
+message=null
+lastAccessTime=2022-07-13 15:46:33.468
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt],{saveMmlToPdf : true}
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220713154633
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Handler Setting
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1657694793479
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:46:37.683][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220713154633476]
+m2soft.ers.report.core.RDException: [ERS-18000] 요청한 문서를 실행하는데 실패했습니다.(java.lang.Exception)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:64)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.Exception: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf
+	at m2soft.javard.rdfile.DSFile.hrcConnect(DSFile.java:727)
+	at m2soft.javard.datasource.hrcDATABASE.Connect(hrcDATABASE.java:181)
+	at m2soft.javard.mrd.AbstractDBServiceFile.hrcConnect(AbstractDBServiceFile.java:330)
+	at m2soft.javard.mrd.AbstractDBServiceFile.processConnect(AbstractDBServiceFile.java:66)
+	at m2soft.javard.mrd.AbstractDBService.connect(AbstractDBService.java:72)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10917)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator._ProcessAppendReport(ReportGenerator.java:11709)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:1026)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11053)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	... 4 more
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getReaderFromUrl(MyHttpClient.java:345)
+	at m2soft.javard.rdfile.DSFile.prepareReader(DSFile.java:137)
+	at m2soft.javard.rdfile.DSFile.hrcConnect(DSFile.java:716)
+	... 25 more
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 30 more
+[2022-07-13 15:46:41.486][ERROR][m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:96)][20220713154641032][RequestInfo]
+rdid=20220713154641032
+status=2
+message=null
+lastAccessTime=2022-07-13 15:46:41.031
+mrd_param=/rpdfprintdialog /rfn [http://localhost:8081/ReportingServer/mrd/sample.txt],{saveMmlToPdf : true} /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=pdf
+start_time=20220713154641
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+scheduler_execute_step=Handler Setting
+start_milli_time=1657694801032
+opcode=500
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-07-13 15:46:41.487][ERROR][m2soft.ers.report.core.executer.ResultHandler.error(ResultHandler.java:48)][20220713154641032]
+m2soft.ers.report.core.RDException: [ERS-12101] 보고서 실행 중에 오류가 발생했습니다.(java.lang.Exception: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf)
+	at m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:202)
+	at m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:243)
+	at m2soft.ers.report.core.viewer.MultiViewer.openFile(MultiViewer.java:145)
+	at m2soft.ers.report.core.viewer.MultiViewer.export(MultiViewer.java:53)
+	at m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:110)
+	at m2soft.ers.report.core.handler.ExportHandler.process(ExportHandler.java:54)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.lang.Exception: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf
+	at m2soft.javard.rdfile.DSFile.hrcConnect(DSFile.java:727)
+	at m2soft.javard.datasource.hrcDATABASE.Connect(hrcDATABASE.java:181)
+	at m2soft.javard.mrd.AbstractDBServiceFile.hrcConnect(AbstractDBServiceFile.java:330)
+	at m2soft.javard.mrd.AbstractDBServiceFile.processConnect(AbstractDBServiceFile.java:66)
+	at m2soft.javard.mrd.AbstractDBService.connect(AbstractDBService.java:72)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10917)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator._ProcessAppendReport(ReportGenerator.java:11709)
+	at m2soft.javard.mrd.ReportGenerator.processReportDone(ReportGenerator.java:1026)
+	at m2soft.javard.mrd.ReportGenerator._AfterMakeReport(ReportGenerator.java:11053)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12677)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.gui.RdCtrl.FileOpen(RdCtrl.java:132)
+	at m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:198)
+	... 7 more
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getReaderFromUrl(MyHttpClient.java:345)
+	at m2soft.javard.rdfile.DSFile.prepareReader(DSFile.java:137)
+	at m2soft.javard.rdfile.DSFile.hrcConnect(DSFile.java:716)
+	... 22 more
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost:8081/ReportingServer/mrd/,{saveMmlToPdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 27 more
+[2022-07-13 17:09:23.426][INFO ][m2soft.ers.report.core.Server.initializeServer(Server.java:107)]Started up ERS-ReportingServer...
+[2022-07-15 00:55:37.031][INFO ][m2soft.ers.report.core.Server.shutDown(Server.java:141)]Shut down ERS-ReportingServer...

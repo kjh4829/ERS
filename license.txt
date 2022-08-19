@@ -1,0 +1,64 @@
+M2 Soft Co., Ltd.
+Software License Agreement
+
+This Agreement is very important.  Please read it thoroughly.
+This Software License Agreement (hereunder "Agreement") is made between M2 Soft Co., Ltd. (hereunder "Company") and the individual or corporate end-users of the M2 Software products (hereunder "End-user") in regards to the products of the Company.  
+
+The Company's software products shall comprise the computer software, and may include the media products, print materials and "online or web archives.   The software products shall cover the update and/or supplementary software. You are permitted to use the software in compliance with the software license agreement contained in the individual software products.  You shall agree to the terms and conditions of this Agreement by the installation, copy or use of the software products. Unless you agree to the terms and conditions of this Agreement, you may neither install nor use the software products.  In this event, you may return the software products to the supplier and ask them the payback of the purchase price.  
+
+General Terms and Conditions
+
+The Company's software products shall be protected under the copyright law, the international copyright act and the other intellectual properties.  The software products may not be an object for a sales or purchase, but their usage shall be licensed.  
+
+1. License
+This Agreement shall grant the following rights to the End-users.
+
+1.1 Software Application
+You may install, use, access, display or execute one of the software products or the previous version executed under the same operation system only on a single computer, workstation, terminal, mobile PC, pager, "smart-phone" or other digital electronic devices   The main user of the desktop computer in which this software is executed may be permitted to make a duplicate to use it in his/her laptop computer.  
+
+1.2 Storage Device / Network
+You may save and install only a single software product on the storage device including the network server which is used only to execute the software products of the other computers via network.  You shall purchase and designate the individual licenses for each terminal whose software products are executed by the software products of the storage devise.  The license for the software products may not be shared or used by multiple users.
+
+1.3 License Package
+In the event of the license package of the Company, you may execute the software programs only within the specified number of users.  You may make the same number of duplicates for the purpose of using on the laptop computer as stated in the above 1.1. 
+
+1.4 Right Reserves 
+All rights shall be reserved by the Company unless the right is granted in writing.
+
+2. Other Rights and Limitation
+
+2.1 Limitation to Reverse Engineering, Decompiling, Disassembly
+Reverse engineering, decompiling and/or disassembly of the software products may not be allowed with the exception that the relevant laws permit despite the limitations of this Agreement.  
+
+2.2 Segregation of the Components
+The use of the Company's software products shall be permitted only as an integrated product.  You may not segregate the products to use them on more than 1 computer. 
+
+2.3 Trademarks
+This Agreement shall not grant any right in regards to the Company's trademarks or service marks.  
+
+2.4 Lease
+You may not lease, rent or lend the Company's software products to a third party.
+
+2.5 Services
+The Company can render supporting services (hereunder "Service") for the software products.  This Service shall be in accordance with the Company's policy and the software program's application as stated in the handbook, the archives on the website and the other materials provided by the Company.  The supplementary software codes provided as a part of the Service shall be treated as the part of the software products and applied by this Agreement.  The End-user agrees that the Company may use the technical information acquired during the Service for the support and development of the software products.  The Company may not use the technical information to reveal the identity of the End-user.  
+
+2.6 Assignment 
+The original user may assign firsthand the right for this Agreement and the software products to the End-user permanently, which shall be limited only to once.  The assignment shall include all the related products like the components, media, print materials, upgrade version etc.   This assignment may not be made in consignment sales or secondhand manners.  The assignee shall agree to the terms and conditions of this Agreement including the aforementioned limitation to the assignment.  
+
+2.7 Termination 
+The Company may terminate this Agreement without any effects on the other rights in the event that you breach this Agreement.  You shall do away with the corresponding software products, duplicates and the components upon receipt of the termination notice.
+
+3. Upgrade
+
+3.1 You shall obtain legally the license of the products you are entitled to upgrade by the Company in order to use it at your end in the event that the upgrade is marked in software products.  The software products with the upgrade remark shall replace or supplement or annul the products you are entitled to upgrade.  You may use the upgraded products complying with the terms and conditions of the license.  
+
+3.2 You may use or assign the software product as a part of the single package product and may not segregate the software product to use it in more than 1 computer in the event that the software product is provided as a single product for upgrading a part of the package software programs for which you reserve the license.  
+
+4. Copyright
+The Company or its authorized supplier shall reserve the ownership and the copyright of the software products, their contents such as images, pictures, animations, video, audio, music, texts and the supplementary programs, the attached print materials and the duplicate of the software products.  All the ownership and the intellectual property rights for the contents accessible by the license of the software products shall be the assets of the owner of the corresponding contents, which shall be protected by the relevant copyright law or other intellectual property rights act.  This Agreement shall not grant you any rights for the contents.  You may make one copy of the electronic documents and may not copy the enclosed print materials of the software products in the event that only the electronic documents are contained in the software products.  
+
+5. Multiple Media Software
+You may receive the software products saved in more than 2 media. You may use only one appropriate media on one computer regardless the delivered media's form or size and may not execute the other media in the other computers.  You may not lease, rent or lend the other media to a third party as aforementioned in Article 2.4.  
+
+6. Back-up Copy
+You may reserve the original media of the Company's software products only for the safekeeping or backup purpose after installing one of the media on your computer under this Agreement.  The duplicate of the software products may be made only for the safekeeping or back-up purpose in the event that the original media are needed for the operation of the software products in the computer. You may not copy the software products or attached print materials unless this Agreement permits hereunder.  

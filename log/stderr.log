@@ -1,0 +1,70 @@
+2022-04-20 13:01:23.942:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-04-20 13:01:24.294:INFO::jetty-6.1.26
+2022-04-20 13:01:36.542:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-04-21 14:30:35.780:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-04-21 14:31:09.575:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-04-21 14:31:09.860:INFO::jetty-6.1.26
+2022-04-21 14:31:14.051:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-04-29 08:22:03.274:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-04-29 08:22:03.502:INFO::jetty-6.1.26
+2022-04-29 08:22:07.856:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-04-29 08:23:52.866:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-04-29 08:24:26.845:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-04-29 08:24:27.073:INFO::jetty-6.1.26
+2022-04-29 08:24:31.295:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-05-04 08:21:49.856:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-05-04 08:21:50.148:INFO::jetty-6.1.26
+2022-05-04 08:22:09.454:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-05-04 15:59:33.951:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-05-04 16:00:12.186:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-05-04 16:00:12.474:INFO::jetty-6.1.26
+2022-05-04 16:00:33.336:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-05-13 18:55:13.095:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-05-13 18:55:13.333:INFO::jetty-6.1.26
+2022-05-13 18:55:17.455:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-05-13 18:57:31.249:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-05-13 18:58:03.127:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-05-13 18:58:03.553:INFO::jetty-6.1.26
+2022-05-13 18:58:11.146:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-05-20 08:50:42.620:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-05-20 08:51:23.791:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-05-20 08:51:24.057:INFO::jetty-6.1.26
+2022-05-20 08:51:28.064:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-06-02 07:22:52.253:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-06-02 07:22:52.532:INFO::jetty-6.1.26
+2022-06-02 07:23:05.551:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-06-20 07:05:53.128:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-06-20 07:05:53.439:INFO::jetty-6.1.26
+2022-06-20 07:06:10.893:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-06-22 01:20:02.773:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+[WARN][m2soft.ers.common.util.FileUtil] file rename failed! try to force a file to move! (C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\log\error.log -> error_20220620.log)
+[WARN][m2soft.ers.common.util.FileUtil] file delete failed! try to delete file contents! (C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\log\error.log)
+2022-06-22 01:20:44.078:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-06-22 01:20:44.486:INFO::jetty-6.1.26
+2022-06-22 01:20:52.270:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-06-22 08:30:41.000:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-06-22 08:30:41.263:INFO::jetty-6.1.26
+2022-06-22 08:43:59.270:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-07-15 00:55:36.891:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-07-15 00:56:20.547:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-07-15 00:56:20.813:INFO::jetty-6.1.26
+2022-07-15 00:56:25.330:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-08-03 08:44:11.935:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+[WARN][m2soft.ers.common.util.FileUtil] file rename failed! try to force a file to move! (C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\log\error.log -> error_20220715.log)
+[WARN][m2soft.ers.common.util.FileUtil] file delete failed! try to delete file contents! (C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\log\error.log)
+2022-08-03 08:44:56.766:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-08-03 08:44:57.140:INFO::jetty-6.1.26
+2022-08-03 08:45:26.619:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-08-04 08:53:37.089:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+[WARN][m2soft.ers.common.util.FileUtil] file rename failed! try to force a file to move! (C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\log\error.log -> error_20220803.log)
+[WARN][m2soft.ers.common.util.FileUtil] file delete failed! try to delete file contents! (C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\log\error.log)
+2022-08-04 08:54:16.561:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-08-04 08:54:16.844:INFO::jetty-6.1.26
+2022-08-04 08:54:38.602:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-08-16 08:39:35.129:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-08-16 08:39:35.321:INFO::jetty-6.1.26
+2022-08-16 08:39:38.704:INFO::Started SelectChannelConnector@0.0.0.0:8283
+2022-08-16 08:41:29.154:INFO::Stopped SelectChannelConnector@0.0.0.0:8283
+2022-08-16 08:42:01.106:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2022-08-16 08:42:01.482:INFO::jetty-6.1.26
+2022-08-16 08:42:07.277:INFO::Started SelectChannelConnector@0.0.0.0:8283

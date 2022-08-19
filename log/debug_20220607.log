@@ -1,0 +1,61 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-06-07 15:31:52.766][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220607153152765][RequestInfo]
+rdid=20220607153152765
+status=0
+message=null
+lastAccessTime=2022-06-07 15:31:52.760
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt] 
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220607153152
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654583512765
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-06-07 15:31:52.866][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220607153152765]Put in Queue(0/100)
+[2022-06-07 15:31:52.867][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220607153152765]{ERSExecuter-4}Pop from Queue(0/100)
+[2022-06-07 15:32:05.696][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220607153205695][RequestInfo]
+rdid=20220607153205695
+status=0
+message=null
+lastAccessTime=2022-06-07 15:32:05.695
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt] 
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220607153205
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1654583525696
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-06-07 15:32:05.697][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220607153205695]Put in Queue(0/100)
+[2022-06-07 15:32:05.698][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220607153205695]{ERSExecuter-4}Pop from Queue(0/100)

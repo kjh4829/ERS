@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure_9_2.dtd">
+
+<!-- =============================================================== -->
+<!-- Configure the Jetty Server                                      -->
+<!--                                                                 -->
+<!-- Documentation of this file format can be found at:              -->
+<!-- http://docs.codehaus.org/display/JETTY/jetty.xml                -->
+<!--                                                                 -->
+<!-- =============================================================== -->
+
+
+<Configure id="server" class="org.eclipse.jetty.server.Server">
+    <!-- =========================================================== -->
+    <!-- Set connectors                                              -->
+    <!-- =========================================================== -->
+    <Call name="addConnector">
+      <Arg>
+          <New class="org.eclipse.jetty.server.ServerConnector">
+            <Arg><Ref refid="server"/></Arg>
+            <Set name="host">0.0.0.0</Set>
+            <Set name="port"><SystemProperty name="server.port" default="8283"/></Set>
+            <Set name="idleTimeout">180000</Set>
+          </New>
+      </Arg>
+    </Call>
+    
+    <!-- =========================================================== -->
+    <!-- Add handler                                          -->
+    <!-- =========================================================== -->
+    <Call name="setHandler">
+      <Arg>
+        <New class="org.eclipse.jetty.webapp.WebAppContext">
+          <Set name="contextPath"><SystemProperty name="server.context"/></Set>
+          <Set name="war"><SystemProperty name="server.home"/></Set>
+          <Set name="maxFormContentSize">200000</Set>
+        </New>
+      </Arg>
+    </Call>
+
+    <!-- =========================================================== -->
+    <!-- extra options                                               -->
+    <!-- =========================================================== -->
+    <Set name="stopAtShutdown">true</Set>
+
+</Configure>

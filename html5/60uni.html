@@ -1,0 +1,39 @@
+<HTML>
+	<HEAD>
+		<TITLE>OCX viewer</TITLE>
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Progma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+	</HEAD>
+	<BODY leftmargin="0px" rightmargin="0px" topmargin="0px" bottommargin="0px" onload="rdopen()">
+	<input type=button value="RefreshReport" onclick="fn_click()">
+		<SCRIPT LANGUAGE=javascript>
+			function rdopen()
+			{
+				cxviewer.AutoAdjust = false;
+				cxviewer.ZoomRatio = 120;
+				//cxviewer.DisableToolbar (1);
+				cxviewer.ApplyLicense ("0.0.0.0");
+				//cxviewer.SetPrint2(1,0,1,0);
+				cxviewer.FileOpen ("http://localhost:8081/ReportingServer/mrd/sample.mrd", "/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]");	
+			}
+
+			function fn_click(){
+				cxviewer.PrintDialog(); 
+			}
+
+		</SCRIPT>
+		<SCRIPT LANGUAGE=JavaScript FOR=cxviewer EVENT="PrintFinished()">
+			alert("PrintFinished");
+			cxviewer.DisableToolbar (1);
+		</SCRIPT>
+		<SCRIPT LANGUAGE=JavaScript FOR=cxviewer EVENT="ToolbarButtonClicked(nButtonID) ">
+			alert("선택된 버튼 index: " + nButtonID);
+		</SCRIPT>
+
+		<object id=cxviewer name=cxviewer width=100% height=100% classid="clsid:04931AA4-5D13-442f-AEE8-0F1184002BDD" codebase="./cxviewer60u.cab#version=6,4,5,528">
+</object>
+		
+	</BODY>
+</HTML>

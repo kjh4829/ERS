@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <!--
+  <file name="engine\80\cxviewer80.ocx">
+    <typelib tlbid="{b74c0ebb-6063-4079-95b4-290c71a6c7c7}" version="8.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{5E270B52-ABED-435B-8F0D-CEE8BAEBB2D4}" threadingModel="Apartment" tlbid="{b74c0ebb-6063-4079-95b4-290c71a6c7c7}" progid="Rdviewer80.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer80" iid="{6C13DF06-E5F9-402A-89DC-E2AB565D8FAB}" tlbid="{B74C0EBB-6063-4079-95B4-290C71A6C7C7}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer80Events" iid="{E3E3D608-B6CF-4E08-97A5-BBB30445CA15}" tlbid="{B74C0EBB-6063-4079-95B4-290C71A6C7C7}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\80u\cxviewer80u.ocx">
+    <typelib tlbid="{7dc04bfe-2793-4cb0-b9ba-a92135918a33}" version="8.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{3C05334B-8618-4DA7-A23B-A5E32B7E66D5}" threadingModel="Apartment" tlbid="{7dc04bfe-2793-4cb0-b9ba-a92135918a33}" progid="Rdviewer80U.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer80u" iid="{84688C03-4408-44D4-BEEA-7EB98AC073C1}" tlbid="{7DC04BFE-2793-4CB0-B9BA-A92135918A33}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer80uEvents" iid="{B430D8A2-A994-4713-974B-116CD95D0B7A}" tlbid="{7DC04BFE-2793-4CB0-B9BA-A92135918A33}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  
+  <file name="engine\80ru\cxviewer80ru.ocx">
+    <typelib tlbid="{DE25B25D-36A3-4574-A015-9F1BA3DA7A26}" version="8.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{4C58293C-BA26-42BC-AFBB-B4E44C4F3854}" threadingModel="Apartment" tlbid="{DE25B25D-36A3-4574-A015-9F1BA3DA7A26}" progid="Rdviewer80RU.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer80ru" iid="{4E1139A9-8156-42DA-BC77-BD053AE2C450}" tlbid="{DE25B25D-36A3-4574-A015-9F1BA3DA7A26}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer80ruEvents" iid="{3D9EB915-7130-4EF4-8663-472146E74061}" tlbid="{DE25B25D-36A3-4574-A015-9F1BA3DA7A26}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  
+  <file name="engine\80j\cxviewer80j.ocx">
+    <typelib tlbid="{627B356A-E999-4FB0-82AF-71E1CC72F736}" version="8.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{4B7F9E40-8792-4696-8E88-6A7E64459A32}" threadingModel="Apartment" tlbid="{627B356A-E999-4FB0-82AF-71E1CC72F736}" progid="Cxviewer80J.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer80j" iid="{216DF838-2A1C-45E3-B0BE-52478B2277D3}" tlbid="{627B356A-E999-4FB0-82AF-71E1CC72F736}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer80jEvents" iid="{846550A1-E610-4F90-A5BE-676D3C54911D}" tlbid="{627B356A-E999-4FB0-82AF-71E1CC72F736}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\80r\cxviewer80r.ocx">
+    <typelib tlbid="{B118711E-2453-45C8-B151-3B1FB063AD48}" version="8.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{F74618C7-D47B-4CED-8694-68EBC8098671}" threadingModel="Apartment" tlbid="{B118711E-2453-45C8-B151-3B1FB063AD48}" progid="Rdviewer80R.RdviewerCtrl.1" />
+  </file>  
+  <comInterfaceExternalProxyStub name="_DCxviewer80r" iid="{366F3AFF-1AC5-48ED-9075-A947C9EDCF89}" tlbid="{B118711E-2453-45C8-B151-3B1FB063AD48}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer80rEvents" iid="{70C13FB3-2D89-4261-B231-A732D04262E2}" tlbid="{B118711E-2453-45C8-B151-3B1FB063AD48}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\70\cxviewer70.ocx">
+    <typelib tlbid="{42256d8e-11a9-4df8-b3db-838bbd3d3b29}" version="7.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{8E1CE32B-2A33-43C0-B974-83D8AC268DCB}" threadingModel="Apartment" tlbid="{42256d8e-11a9-4df8-b3db-838bbd3d3b29}" progid="Rdviewer70.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer70" iid="{49AFD057-5E2C-46FB-AC1C-21ECC1D5F119}" tlbid="{42256D8E-11A9-4DF8-B3DB-838BBD3D3B29}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer70Events" iid="{BF0CCBB2-CE71-4AEC-9A64-7B25665D45A8}" tlbid="{42256D8E-11A9-4DF8-B3DB-838BBD3D3B29}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\70u\cxviewer70u.ocx">
+    <typelib tlbid="{5657eccf-09aa-4a43-943f-ff4306bed706}" version="7.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{4859069A-D3B3-41EC-937A-31FF3FE8FEF6}" threadingModel="Apartment" tlbid="{5657eccf-09aa-4a43-943f-ff4306bed706}" progid="Rdviewer70U.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer70u" iid="{610A16AE-421C-48AF-882F-1AE4FE5B1B65}" tlbid="{5657ECCF-09AA-4A43-943F-FF4306BED706}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer70uEvents" iid="{6D75A932-2E7B-4AF2-9E63-6F51B1548132}" tlbid="{5657ECCF-09AA-4A43-943F-FF4306BED706}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  
+  <file name="engine\70\cxviewer70ru.ocx">
+    <typelib tlbid="{81F0955F-CB13-444d-94F8-E16132A4AF5A}" version="7.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{5EB3D2D3-9C5F-4dcc-81A0-156A50B87EDF}" threadingModel="Apartment" tlbid="{81F0955F-CB13-444d-94F8-E16132A4AF5A}" progid="Rdviewer70RU.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer70ru" iid="{87FB424E-1920-4b5f-96EE-69FBB47FC6B2}" tlbid="{81F0955F-CB13-444d-94F8-E16132A4AF5A}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer70ruEvents" iid="{7BB560E8-2C00-496f-AE66-6E07ADC37BB5}" tlbid="{81F0955F-CB13-444d-94F8-E16132A4AF5A}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  
+  <file name="engine\70j\cxviewer70j.ocx">
+    <typelib tlbid="{51f9f8c0-5d43-49ac-bc17-585a55611db9}" version="7.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{04262A53-6963-49FE-8198-3AE0BDFFFCC6}" threadingModel="Apartment" tlbid="{51f9f8c0-5d43-49ac-bc17-585a55611db9}" progid="Cxviewer70J.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer70j" iid="{A3D3F622-7343-4D52-A7B9-3C16908730D7}" tlbid="{51F9F8C0-5D43-49AC-BC17-585A55611DB9}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer70jEvents" iid="{BAD5745F-EF9F-492B-9A0C-D0EC479163D8}" tlbid="{51F9F8C0-5D43-49AC-BC17-585A55611DB9}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\70r\cxviewer70r.ocx">
+    <typelib tlbid="{b9c7adc5-abff-4a91-a8a0-669674fe5aa5}" version="7.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{56715431-E8C1-4636-A43C-CF03609636DE}" threadingModel="Apartment" tlbid="{b9c7adc5-abff-4a91-a8a0-669674fe5aa5}" progid="Rdviewer70R.RdviewerCtrl.1" />
+  </file>  
+  <comInterfaceExternalProxyStub name="_DCxviewer70r" iid="{EF907D19-61CB-4FA0-8E46-1B87008470C5}" tlbid="{B9C7ADC5-ABFF-4A91-A8A0-669674FE5AA5}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer70rEvents" iid="{BF6318ED-BC7E-4411-A253-0D0FFF6247E7}" tlbid="{B9C7ADC5-ABFF-4A91-A8A0-669674FE5AA5}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\60\cxviewer60.ocx">
+    <typelib tlbid="{e6d1a8ec-b33d-4ee3-bbfe-c0f81846cbd9}" version="6.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{DF793F07-89E0-4A63-A56B-D06A3C836127}" threadingModel="Apartment" tlbid="{e6d1a8ec-b33d-4ee3-bbfe-c0f81846cbd9}" progid="Rdviewer60.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer60" iid="{506BDE85-AA6F-4200-A81E-0E33FE133842}" tlbid="{E6D1A8EC-B33D-4EE3-BBFE-C0F81846CBD9}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer60Events" iid="{624D2D98-CDE7-4378-B985-7526DA6276A8}" tlbid="{E6D1A8EC-B33D-4EE3-BBFE-C0F81846CBD9}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\60u\cxviewer60u.ocx">
+    <typelib tlbid="{962be8b4-755b-420b-9c68-c58766384d2d}" version="6.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{04931AA4-5D13-442F-AEE8-0F1184002BDD}" threadingModel="Apartment" tlbid="{962be8b4-755b-420b-9c68-c58766384d2d}" progid="Rdviewer60U.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer60u" iid="{ACB95BCA-002B-4BA2-A9B8-719AB94B432A}" tlbid="{962BE8B4-755B-420B-9C68-C58766384D2D}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer60uEvents" iid="{2C7B079D-325F-45CD-B70A-9EA498F42673}" tlbid="{962BE8B4-755B-420B-9C68-C58766384D2D}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\60j\cxviewer60j.ocx">
+    <typelib tlbid="{fa44ff19-57bc-48df-9859-f250ecfa27ab}" version="6.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{4FD5FA4A-38F4-477D-A491-1674D7AA9DC4}" threadingModel="Apartment" tlbid="{fa44ff19-57bc-48df-9859-f250ecfa27ab}" progid="Cxviewer60J.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer60j" iid="{27E15FBE-CF51-41F4-A119-D0CF5C271600}" tlbid="{FA44FF19-57BC-48DF-9859-F250ECFA27AB}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer60jEvents" iid="{B35B3AE7-C34C-44FE-A792-6A2333FE8176}" tlbid="{FA44FF19-57BC-48DF-9859-F250ECFA27AB}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+
+  <file name="engine\60ru\cxviewer60ru.ocx">
+    <typelib tlbid="{6d29289f-5d7e-404a-ae28-f3e80fccfc7f}" version="6.0" helpdir="C:\Windows\SysWow64\" resourceid="0" flags="CONTROL,HASDISKIMAGE" />
+    <comClass clsid="{0606EC18-B046-4BAA-86C1-5E7F8905C2CD}" threadingModel="Apartment" tlbid="{6d29289f-5d7e-404a-ae28-f3e80fccfc7f}" progid="Cxviewer60JR.RdviewerCtrl.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="_DCxviewer60ru" iid="{8E5BC6A2-450E-4A5C-9F3D-4BD0F4D90748}" tlbid="{6D29289F-5D7E-404A-AE28-F3E80FCCFC7F}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="_DCxviewer60ruEvents" iid="{0FB801AB-6693-4B0B-949D-995FA0CAA396}" tlbid="{6D29289F-5D7E-404A-AE28-F3E80FCCFC7F}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"/>
+-->
+</asmv1:assembly>

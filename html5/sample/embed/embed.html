@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embed Sample</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/crownix-viewer.min.css">
+		<script src="../../js/jquery-1.11.0.min.js"></script>
+		<script src="../../js/crownix-viewer.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var viewer = new m2soft.crownix.Viewer('http://localhost:8080/ReportingServer/service', 'crownix-viewer');
+				
+				$('#embed').click(function() {
+					viewer.openFile('sample.mrd', '/rfn [sample.txt]');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="embed" value="execute" />
+		<div id="crownix-viewer" style="position:absolute; width:700px; height:500px; border:1px solid #000;"></div>
+	</body>
+</html>

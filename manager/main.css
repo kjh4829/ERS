@@ -1,0 +1,107 @@
+body {
+	overflow: hidden;
+}
+
+#loading {
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 45%;
+	top: 40%;
+	padding: 2px;
+	z-index: 20001;
+	height: auto;
+}
+
+#loading a {
+	color: #225588;
+}
+
+#loading .loadingIndicator {
+	background: white;
+	font: bold 13px tahoma, arial, helvetica;
+	padding: 10px;
+	margin: 0;
+	height: auto;
+	color: #444;
+}
+
+#loadingMsg {
+	font: normal 10px arial, tahoma, sans-serif;
+}
+
+#container
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background:url('images/login_bg_top_bg.png') repeat-x;
+}
+#center
+{
+	position: center;
+	margin: 0;
+	padding: 0;
+	background:url('images/login_bg_top.png') no-repeat top center;
+	width:1000px;
+	height: 500px;
+}
+
+.sampleName {
+	color: #8FB34F;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.exampleSeperator {
+	border-bottom: 2px solid gray;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	text-align: left;
+}
+
+.explorerCheckErrorMessage {
+	color: red;
+	font-family: Georgia, serif;
+	font-size: 13px;
+}
+
+.dataserver-title-bar {
+	background:url('images/data server_bg.png') repeat-x;
+}
+
+.reportingserver-title-bar {
+	background:url('images/reporting server_bg.png') repeat-x;
+}
+
+.mobileserver-title-bar {
+	background:url('images/mobile server_bg.png') repeat-x;
+}
+
+.deliveryserver-title-bar {
+	background:url('images/delivery server_bg.png') repeat-x;
+}
+
+
+.treeCell,
+.treeCellDark,
+.treeCellOver,
+.treeCellOverDark,
+.treeCellSelected,
+.treeCellSelectedDark,
+.treeCellSelectedOver,
+.treeCellSelectedOverDark,
+.treeCellDisabled,
+.treeCellDisabledDark,
+.treeTallCell,
+.treeTallCellDark,
+.treeTallCellOver,
+.treeTallCellOverDark,
+.treeTallCellSelected,
+.treeTallCellSelectedDark,
+.treeTallCellSelectedOver,
+.treeTallCellSelectedOverDark,
+.treeTallCellDisabled,
+.treeTallCellDisabledDark {
+    overflow: visible !important;
+}

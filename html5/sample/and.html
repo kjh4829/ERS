@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html style="margin:0;height:100%">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta http-equiv="Content-Security-Policy-Report-Only: default-src">  
+		<title>Crownix HTML5 Viewer</title>
+		<script src="http://192.168.10.162:8081/ReportingServer/html5/js/jquery-1.11.0.min.js"></script>
+		<script src="http://192.168.10.162:8081/ReportingServer/html5/js/crownix-viewer.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://192.168.10.162:8081/ReportingServer/html5/css/crownix-viewer.min.css">
+	</head>
+	<body style="margin:0;height:100%">
+		<div id="crownix-viewer" style="position:absolute;width:100%;height:100%"></div>
+
+		<script>
+			window.onload = function(){		
+				var viewer = new m2soft.crownix.Viewer('http://192.168.10.162:8081/ReportingServer/service', 'crownix-viewer');
+				viewer.openFile('sample2.mrd','/rdata [1] /rusecxlib /rmmlopt [1] /rerroropt [3] /rloadimageopt [1]', {imageDrawOption : {useCanvas: false}});
+			};
+
+		</script>
+	</body>
+</html>

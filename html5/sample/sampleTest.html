@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="margin:0;height:100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix HTML5 Viewer</title>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/crownix-viewer.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/crownix-viewer.min.css">
+	</head>
+	<body style="margin:0;height:100%">
+		<div id="crownix-viewer" style="position:absolute;width:100%;height:100%"></div>
+		<script>
+			window.onload = function(){
+				viewer = new m2soft.crownix.Viewer('http://localhost:8081/ReportingServer_7.4/service', 'crownix-viewer');
+
+				    m2soft.crownix.Viewer.debug = true;
+
+				var eventHandler = function(event){
+				alert();
+					if (event.status) 
+					{
+						if (event.action == "save")
+						{
+							alert("save");
+							console.log("save file name : " + event.message);
+							console.log("save file type : " + event.type);
+						}
+						if (event.action == "print")
+						{
+							alert("print");
+							console.log("pdf print / file name : " + event.message);
+						}
+						else
+						{
+							console.log("error message : " + event.message);
+						}
+					}
+				};
+				viewer.bind('report-export', eventHandler);				
+				viewer.openFile('sample.mrd', '/rfn [sample.txt]'); 
+			};
+		</script>
+	</body>
+</html>

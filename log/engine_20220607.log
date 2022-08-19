@@ -1,0 +1,124 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=메디젠휴먼케어
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-06-07 15:31:53.772][DEBUG][20220607153152765][INIT] create ServerSideRD - 786|8(ms),null,
+[2022-06-07 15:31:54.374][DEBUG][20220607153152765][OPEN] before CMFileOpen - 1|527|0|37|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:31:55.020][DEBUG][20220607153152765][OPEN] before processForHaveDBConnectInfo - 1|633|0|9(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:31:55.320][DEBUG][20220607153152765][DBService] Datasource Connection(0) - 9(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:31:55.328][DEBUG][20220607153152765][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:31:55.328][DEBUG][20220607153152765][OPEN] before _MakeReport - 10|276|21|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:31:55.338][DEBUG][20220607153152765][DBService] Datasource Fetch Data [ret:0 time:9 page:0 name: SerialID:3 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:31:55.371][WARN ][20220607153152765]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-06-07 15:31:55.840][DEBUG][20220607153152765][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda463834673831424722\sample.mrd,
+[2022-06-07 15:32:05.701][DEBUG][20220607153205695][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-06-07 15:32:05.718][DEBUG][20220607153205695][OPEN] before CMFileOpen - 0|5|0|8|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+[2022-06-07 15:32:05.738][DEBUG][20220607153205695][OPEN] before processForHaveDBConnectInfo - 0|18|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+[2022-06-07 15:32:05.762][DEBUG][20220607153205695][DBService] Datasource Connection(0) - 8(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+[2022-06-07 15:32:05.763][DEBUG][20220607153205695][DBService] Datasource Select Query[ret:0 time:0 query: null],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+[2022-06-07 15:32:05.764][DEBUG][20220607153205695][OPEN] before _MakeReport - 1|15|10|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+[2022-06-07 15:32:05.769][DEBUG][20220607153205695][DBService] Datasource Fetch Data [ret:0 time:5 page:0 name: SerialID:8 count:18],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+[2022-06-07 15:32:05.778][WARN ][20220607153205695]ErrorCode - 0101 http://localhost:8081/ReportingServer/mrd/test.jpg 파일이 존재하지 않습니다.,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,
+java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1420)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse0(MyHttpClient.java:974)
+	at m2soft.javard.network.MyHttpClient.getHttpResponseFromUrl(MyHttpClient.java:295)
+	at m2soft.javard.network.MyHttpClient.getInputStreamFromUrl(MyHttpClient.java:362)
+	at m2soft.javard.network.KInternet.GetFile(KInternet.java:247)
+	at m2soft.javard.object.KBitmap.<init>(KBitmap.java:431)
+	at m2soft.javard.mrd.ReportGenerator._NewObject(ReportGenerator.java:544)
+	at m2soft.javard.object.Table._ExeMsg(Table.java:1663)
+	at m2soft.javard.mrd.KPageMap._ExeMsg(KPageMap.java:3103)
+	at m2soft.javard.mrd.ReportGenerator._MakeReport(ReportGenerator.java:4403)
+	at m2soft.javard.mrd.ReportGenerator._BeforeMakeReport(ReportGenerator.java:10942)
+	at m2soft.javard.mrd.ReportGenerator.processForHaveDBConnectInfo(ReportGenerator.java:12736)
+	at m2soft.javard.mrd.ReportGenerator._OpenFile(ReportGenerator.java:12656)
+	at m2soft.javard.mrd.ReportGenerator.CMFileOpen(ReportGenerator.java:13877)
+	at m2soft.javard.mrd.ReportController.openFile(ReportController.java:536)
+	at m2soft.javard.export.MMLExporter.openSingleDocument(MMLExporter.java:137)
+	at m2soft.javard.export.MMLExporter.openDocument(MMLExporter.java:108)
+	at m2soft.javard.export.StreamExporter.open(StreamExporter.java:29)
+	at m2soft.javard.mrd.ReportGenerator.writeStream(ReportGenerator.java:12509)
+	at m2soft.javard.mrd.ReportController.writeMmlDocument(ReportController.java:3442)
+	at m2soft.javard.gui.RdCtrl.writeMmlDocument(RdCtrl.java:833)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.processSingleReport(MultiViewerForHtml5.java:167)
+	at m2soft.ers.report.core.viewer.MultiViewerForHtml5.reportSingleRequest(MultiViewerForHtml5.java:55)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.report(Html5SingleRequestHandler.java:44)
+	at m2soft.ers.handler.html5.Html5SingleRequestHandler.process(Html5SingleRequestHandler.java:23)
+	at m2soft.ers.report.core.handler.HandlerSet.process(HandlerSet.java:90)
+	at m2soft.ers.report.core.executer.Executer.run(Executer.java:60)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/ReportingServer/mrd/test.jpg
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at m2soft.javard.network.MyHttpClient.getHttpResponse2(MyHttpClient.java:1336)
+	... 26 more
+[2022-06-07 15:32:06.156][DEBUG][20220607153205695][DBService] Datasource Disconnection(0) - 0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda13138835701762669195\sample.mrd,

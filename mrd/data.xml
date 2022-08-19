@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<root>
+<dataset id="dsCommon">
+	<colinfo id="C0" size="256" summ="default" type="STRING"/>
+	<colinfo id="C1" size="256" summ="default" type="STRING"/>
+	<colinfo id="C2" size="256" summ="default" type="STRING"/>
+	<colinfo id="C3" size="256" summ="default" type="STRING"/>
+	<colinfo id="C4" size="256" summ="default" type="STRING"/>
+	<colinfo id="C5" size="256" summ="default" type="STRING"/>
+	<colinfo id="C6" size="256" summ="default" type="STRING"/>
+	<record>
+		<C0>1</C0>
+		<C1>2647</C1>
+		<C2>정재우</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;08:29:11</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>2</C0>
+		<C1>2907</C1>
+		<C2>조민경</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;08:21:27</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>3</C0>
+		<C1>2907</C1>
+		<C2>조민경</C2>
+		<C3>퇴실</C3>
+		<C4>2022-05-23&#32;11:50:12</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>4</C0>
+		<C1>20120198</C1>
+		<C2>최부용</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;08:04:15</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>5</C0>
+		<C1>20190064</C1>
+		<C2>유수빈</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;08:12:33</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>6</C0>
+		<C1>20190261</C1>
+		<C2>김하늘</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;08:27:59</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>7</C0>
+		<C1>S007</C1>
+		<C2>김태성</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;07:47:06</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>8</C0>
+		<C1>S007</C1>
+		<C2>김태성</C2>
+		<C3>퇴실</C3>
+		<C4>2022-05-23&#32;17:03:17</C4>
+		<C5/>
+		<C6/>
+	</record>
+	<record>
+		<C0>9</C0>
+		<C1>S008</C1>
+		<C2>양현민</C2>
+		<C3>입실</C3>
+		<C4>2022-05-23&#32;08:31:19</C4>
+		<C5/>
+		<C6/>
+	</record>
+</dataset>
+</root>

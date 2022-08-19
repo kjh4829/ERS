@@ -1,0 +1,69 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\bootstrap.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\bin\tomcat-juli.jar
+file.encoding=MS949
+user.language=ko
+]
+
+[2022-06-03 11:09:09.934][DEBUG][20220603110908726][INIT] create ServerSideRD - 955|7(ms),null,
+[2022-06-03 11:09:10.614][DEBUG][20220603110908726][OPEN] before CMFileOpen - 0|596|0|52|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda4373631451929667597\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:09:11.308][DEBUG][20220603110908726][OPEN] before processForHaveDBConnectInfo - 3|677|0|9(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda4373631451929667597\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:09:11.687][DEBUG][20220603110908726][DBService] Datasource Connection(0) - 64(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda4373631451929667597\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:09:11.816][DEBUG][20220603110908726][OPEN] before _MakeReport - 17|292|197|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda4373631451929667597\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:09:11.822][DEBUG][20220603110908726][DBService] Datasource Fetch Data [ret:0 time:3 page:0 name: SerialID:3 count:1],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda4373631451929667597\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:09:11.969][DEBUG][20220603110908726][DBService] Datasource Disconnection(0) - 47(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda4373631451929667597\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:45.101][DEBUG][20220603111045095][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-06-03 11:10:45.122][DEBUG][20220603111045095][OPEN] before CMFileOpen - 0|5|0|13|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda960496751-1274435941\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:45.160][DEBUG][20220603111045095][OPEN] before processForHaveDBConnectInfo - 1|34|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda960496751-1274435941\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:45.262][DEBUG][20220603111045095][DBService] Datasource Connection(0) - 56(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda960496751-1274435941\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:45.415][DEBUG][20220603111045095][OPEN] before _MakeReport - 2|44|208|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda960496751-1274435941\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:45.432][DEBUG][20220603111045095][DBService] Datasource Fetch Data [ret:0 time:17 page:0 name: SerialID:8 count:1],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda960496751-1274435941\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:45.557][DEBUG][20220603111045095][DBService] Datasource Disconnection(0) - 48(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda960496751-1274435941\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:49.304][DEBUG][20220603111049295][INIT] create ServerSideRD - 5|0(ms),null,
+[2022-06-03 11:10:49.320][DEBUG][20220603111049295][OPEN] before CMFileOpen - 0|5|0|8|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2013989041-684655895\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:49.341][DEBUG][20220603111049295][OPEN] before processForHaveDBConnectInfo - 0|19|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2013989041-684655895\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:49.450][DEBUG][20220603111049295][DBService] Datasource Connection(0) - 49(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2013989041-684655895\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:49.621][DEBUG][20220603111049295][OPEN] before _MakeReport - 7|53|220|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2013989041-684655895\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:49.635][DEBUG][20220603111049295][DBService] Datasource Fetch Data [ret:0 time:12 page:0 name: SerialID:13 count:1],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2013989041-684655895\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:49.760][DEBUG][20220603111049295][DBService] Datasource Disconnection(0) - 49(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2013989041-684655895\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:58.256][DEBUG][20220603111058250][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-06-03 11:10:58.270][DEBUG][20220603111058250][OPEN] before CMFileOpen - 0|4|0|8|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda735923531-38713880\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:58.309][DEBUG][20220603111058250][OPEN] before processForHaveDBConnectInfo - 1|36|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda735923531-38713880\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:58.391][DEBUG][20220603111058250][DBService] Datasource Connection(0) - 52(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda735923531-38713880\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:58.532][DEBUG][20220603111058250][OPEN] before _MakeReport - 2|28|193|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda735923531-38713880\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:58.542][DEBUG][20220603111058250][DBService] Datasource Fetch Data [ret:0 time:8 page:0 name: SerialID:18 count:1],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda735923531-38713880\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 11:10:58.901][DEBUG][20220603111058250][DBService] Datasource Disconnection(0) - 46(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda735923531-38713880\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:33:49.258][DEBUG][20220603133349251][INIT] create ServerSideRD - 3|0(ms),null,
+[2022-06-03 13:33:49.283][DEBUG][20220603133349251][OPEN] before CMFileOpen - 0|5|0|18|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2042455942-1083022391\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:33:49.298][DEBUG][20220603133349251][OPEN] before processForHaveDBConnectInfo - 1|13|0|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2042455942-1083022391\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:33:49.385][DEBUG][20220603133349251][DBService] Datasource Connection(0) - 51(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2042455942-1083022391\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:33:49.673][DEBUG][20220603133349251][OPEN] before _MakeReport - 3|33|338|0(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2042455942-1083022391\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:33:49.679][DEBUG][20220603133349251][DBService] Datasource Fetch Data [ret:0 time:5 page:0 name: SerialID:23 count:1],C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2042455942-1083022391\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:33:49.968][DEBUG][20220603133349251][DBService] Datasource Disconnection(0) - 56(ms),C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp\~rda2042455942-1083022391\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:35:57.801][DEBUG][20220603133557791][INIT] create ServerSideRD - 3|0(ms),null,
+[2022-06-03 13:35:57.810][DEBUG][20220603133557791][OPEN] before CMFileOpen - 0|6|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:35:57.825][DEBUG][20220603133557791][OPEN] before processForHaveDBConnectInfo - 1|13|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:35:57.920][DEBUG][20220603133557791][DBService] Datasource Connection(0) - 56(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:35:58.079][DEBUG][20220603133557791][OPEN] before _MakeReport - 7|31|215|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:35:58.084][DEBUG][20220603133557791][DBService] Datasource Fetch Data [ret:0 time:4 page:0 name: SerialID:28 count:1],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:35:58.218][DEBUG][20220603133557791][DBService] Datasource Disconnection(0) - 48(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:15.431][DEBUG][20220603133615398][INIT] create ServerSideRD - 2|0(ms),null,
+[2022-06-03 13:36:15.469][DEBUG][20220603133615398][OPEN] before CMFileOpen - 0|35|0|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:15.480][DEBUG][20220603133615398][OPEN] before processForHaveDBConnectInfo - 1|10|0|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:15.572][DEBUG][20220603133615398][DBService] Datasource Connection(0) - 58(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:15.752][DEBUG][20220603133615398][OPEN] before _MakeReport - 0|33|238|0(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:15.761][DEBUG][20220603133615398][DBService] Datasource Fetch Data [ret:0 time:6 page:0 name: SerialID:33 count:1],C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:15.876][DEBUG][20220603133615398][DBService] Datasource Disconnection(0) - 48(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,
+[2022-06-03 13:36:27.549][DEBUG][20220603133615398][SAVE][PDF] open: 9821, swapin: 0, save: 306(totPg:1,longestPg:1,longestTime:306), close: 1314, total: 11586(ms),C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\Starnet\rptPDMJigStatusListReportSM.mrd,

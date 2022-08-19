@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="margin: 0; height: 100%">
+	<head>
+		<meta charset="utf-8">
+		<title>Crownix ReportingServer Invoker</title>
+		<script src="../../js/invoker/crownix-invoker.min.js"></script>
+		<script>
+			window.onload = function(){
+				var invoker = new m2soft.crownix.ReportingServerInvoker('http://localhost:8080/ReportingServer/service');
+				invoker.addParameter('opcode', '500');
+				invoker.addParameter('mrd_path', 'sample.mrd');
+				// You need the "/rpdfprintdialog" parameter to enable pdf printing in your browser.
+				invoker.addParameter('mrd_param', '/rpdfprintdialog /rfn [sample.txt]');
+				invoker.addParameter('export_type', 'pdf');
+				invoker.addParameter('protocol', 'sync');
+
+				// You can detect error during export.
+				invoker.invoke(function(response, xhr) {
+					var downloadServletPath = 'http://localhost:8080/ReportingServer/download'; 
+					var ret = response.split('|');
+					var resultCode = ret[0];
+					var message = ret[1];
+					if(resultCode == '1') {
+						// If successful, download
+						var iframeSrc = downloadServletPath + '?filename=' + message;
+						var rdid = xhr && xhr.getResponseHeader('crownix-rdid');
+						
+						if(rdid)
+							iframeSrc += '&rdid=' + rdid;
+							
+						document.getElementById('downloadFrame').src = iframeSrc;
+					} else {
+						// If failure, process error message
+						document.getElementById('response').innerText = message;
+					}
+				});
+			};
+		</script>
+	</head>
+	<body style="margin: 0; height: 100%">
+		<iframe id="downloadFrame" style="display: none"></iframe>
+		<div id="response" style="position:absolute; width:100%; height:100%;">
+		</div>
+	</body>
+</html>

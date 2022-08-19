@@ -1,0 +1,130 @@
+###### common ######
+server.charset=euc-kr
+server.request.charset=euc-kr
+server.response.charset=euc-kr
+server.file.encoding=euc-kr
+#korean, japanese, english
+server.language=korean
+
+server.session.timeout=1800
+server.request.timeout=60
+server.protocol.type=async
+server.executer.count=4
+server.maxqueue.size=100
+
+###### report ######
+report.mrd.dir=
+report.save.dir=
+#report.common.param=/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rpdffontlist [default|NANUMGOTHIC.TTF,D:/workspace/RDReportingServer/deploy/font/]
+report.common.param=/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [πŸ≈¡√º|BatangChe.ttf&πŸ≈¡|Batang.ttf&µ∏øÚ|Dotum.ttf&µ∏øÚ√º|DotumChe.ttf&±º∏≤|Gulim.ttf&±º∏≤√º|GulimChe.ttf&∏º¿∫ ∞ÌµÒ|malgun.ttf&Arial|arial.ttf,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/]
+report.txtcharset=MS949
+report.dir.pattern=yyyy/MM/dd/
+report.temp.delete=true
+
+###### handler #####
+export.log.file=false
+export.log.db=false
+export.log.db.service=rds
+export.log.db.table=RDRS_EXPORT
+export.handler=
+
+print.log.file=false
+print.log.db=false
+print.log.db.service=rds
+print.log.db.table=RDRS_PRINT
+print.handler=
+
+mail.log.file=false
+mail.log.db=false
+mail.log.db.service=rds
+mail.log.db.table=RDRS_MAIL
+mail.handler=
+
+mail.smtp.host=
+mail.smtp.port=
+mail.authentication.user=
+mail.authentication.password=
+mail.tls=false
+mail.ssl=false
+mail.charset=euc-kr
+
+fax.log.file=false
+fax.log.db=false
+fax.log.db.service=rds
+fax.log.db.table=RDRS_FAX
+fax.save.dir=
+fax.handler=
+
+html5.single.handler=
+html5.multi.handler=
+html5.ie8.emulate=false
+
+mobile.export.type.iphone=png
+mobile.export.type.android=jpg
+mobile.export.type.ipod=png
+mobile.export.type.ipad=png
+
+###### reporting agent #####
+agent.use=false
+agent.port=6586
+agent.timeout=10000
+agent.runcount=1000
+#RD50, RD50u, RD50r, RD50ru, RD55j, RD55jr, RD60, RD60u, RD60ru, RD60j
+agent.ocx.version=RD60u
+
+###### scheduler #####
+schedule.use=false
+schedule.db.service=
+schedule.db.embedded=true
+schedule.history.expiryDate=0
+schedule.history.expiryThreadIntervalMinute=5
+
+
+###### repository server interlock #####
+#repository.server.addr=http://localhost:8080/RepositoryServer/service
+repository.server.addr=
+
+###### delivery server interlock #####
+#delivery.server.addr=http://localhost:8080/DeliveryServer/service
+delivery.server.addr=
+
+###### etc ######
+temp.delete=false
+temp.checkterm=
+temp.delext=
+temp.delolderthan=
+temp.keepdir=
+temp.deldir=
+
+log.db.threadcount=1
+java.awt.headless=false
+servlet.session.create=false
+certpdf.use.fullpath=true
+
+###### cache setting ######
+cache.maxSizeLocalDiskMB=
+cache.maxSizeMemoryMB=
+cache.diskExpiryThreadIntervalSeconds=120
+cache.diskSpoolBufferSizeMB=30
+cache.memoryStoreEvictionPolicy=LRU
+cache.diskAccessStripes=
+cache.maxElementSizeMB=5
+cache.term=
+
+###### security setting ######
+secure.enable=false
+#seed, aes
+secure.algorithm=seed
+
+###### cluster setting ######
+cluster.enable=false
+cluster.prefix=
+
+###### web manager setting ######
+manager.allowip=
+manager.access.denied.url=access-denied.html
+
+###### external storage ######
+storage.mode=1
+storage.path=
+storage.divisionSize=100

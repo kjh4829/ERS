@@ -1,0 +1,770 @@
+[
+log_version=6.0
+server_name=ERS Reporting Server
+server_version=6.4.5.430
+jbre_version=5.5.14.1010
+customer_name=¸ÞµðÁ¨ÈÞ¸ÕÄÉ¾î
+user.dir=C:\WINDOWS\system32
+os.name=Windows 10
+os.version=10.0
+java.version=1.8.0_275
+java.vm.version=25.275-b01
+java.vm.vendor=ojdkbuild
+java.vm.name=OpenJDK 64-Bit Server VM
+java.home=C:\Java\java-1.8.0-openjdk-1.8.0.275-1\jre
+java.class.path=C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-daemon.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\ers-common.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\ant-1.6.5.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\core-3.1.1.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jetty-util-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-2.1-jetty-6.1.26.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\jsp-api-2.1-glassfish-2.1.v20091210.jar;C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\bin\jetty\servlet-api-2.5-20081211.jar
+file.encoding=EUC_KR
+user.language=ko
+]
+
+[2022-08-04 10:26:13.869][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804102613867][RequestInfo]
+rdid=20220804102613867
+status=0
+message=null
+lastAccessTime=2022-08-04 10:26:13.861
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220804102613
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1659576373868
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-08-04 10:26:13.957][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804102613867]Put in Queue(0/100)
+[2022-08-04 10:26:13.958][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804102613867]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 10:26:18.081][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804102613867][RequestInfo]
+rdid=20220804102613867
+status=0
+message=null
+lastAccessTime=2022-08-04 10:26:18.080
+start_time=20220804102618
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804102613867
+start_milli_time=1659576378081
+opcode=702
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 10:26:18.085][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804102613867][RequestInfo]
+rdid=20220804102613867
+status=0
+message=null
+lastAccessTime=2022-08-04 10:26:18.083
+start_time=20220804102618
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804102613867
+start_milli_time=1659576378084
+opcode=702
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 10:26:31.542][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804102613867][RequestInfo]
+rdid=20220804102613867
+status=0
+message=null
+lastAccessTime=2022-08-04 10:26:31.541
+mrd_param=/rpdfprintdialog /rfn [http://localhost:8081/ReportingServer/mrd/sample.txt] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=pdf
+opcode=503
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+totalpage=18
+start_time=20220804102631
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804102613867
+start_milli_time=1659576391542
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-08-04 10:26:31.591][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804102613867]Put in Queue(0/100)
+[2022-08-04 10:26:31.592][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804102613867]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 10:26:31.593][DEBUG][m2soft.ers.handler.export.ConvertMmlToPdfHandler.export(ConvertMmlToPdfHandler.java:52)][20220804102613867]convert start: http://localhost:8081/ReportingServer/mrd/sample.mrd
+[2022-08-04 10:26:31.605][DEBUG][m2soft.ers.report.core.viewer.MultiViewerForMml2Pdf.convertMml2pdf(MultiViewerForMml2Pdf.java:85)][20220804102613867]ServerSideRD.convertMml2Pdf(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804102613867.mml,C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804102613867.pdf,18,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rpdfprintdialog /rfn [http://localhost:8081/ReportingServer/mrd/sample.txt] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko])
+[2022-08-04 10:26:43.244][DEBUG][m2soft.ers.handler.export.ConvertMmlToPdfHandler.export(ConvertMmlToPdfHandler.java:58)][20220804102613867]convert success: C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804102613867.pdf
+[2022-08-04 10:26:43.244][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804102613867]Executer return(totalPage):null
+[2022-08-04 11:21:06.820][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804112106818][RequestInfo]
+rdid=20220804112106818
+status=0
+message=null
+lastAccessTime=2022-08-04 11:21:06.818
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220804112106
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1659579666819
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-08-04 11:21:06.821][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804112106818]Put in Queue(0/100)
+[2022-08-04 11:21:06.821][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804112106818]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 11:21:07.858][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804112106818][RequestInfo]
+rdid=20220804112106818
+status=0
+message=null
+lastAccessTime=2022-08-04 11:21:07.857
+start_time=20220804112107
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804112106818
+start_milli_time=1659579667857
+opcode=702
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 11:21:53.014][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804112153013][RequestInfo]
+rdid=20220804112153013
+status=0
+message=null
+lastAccessTime=2022-08-04 11:21:53.013
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220804112153
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1659579713013
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-08-04 11:21:53.015][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804112153013]Put in Queue(0/100)
+[2022-08-04 11:21:53.016][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804112153013]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 11:21:53.763][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804112153013][RequestInfo]
+rdid=20220804112153013
+status=0
+message=null
+lastAccessTime=2022-08-04 11:21:53.762
+start_time=20220804112153
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804112153013
+start_milli_time=1659579713762
+opcode=702
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 11:22:03.694][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804112203694][RequestInfo]
+rdid=20220804112203694
+status=0
+message=null
+lastAccessTime=2022-08-04 11:22:03.694
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220804112203
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1659579723694
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-08-04 11:22:03.695][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804112203694]Put in Queue(0/100)
+[2022-08-04 11:22:03.695][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804112203694]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 11:22:04.361][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804112203694][RequestInfo]
+rdid=20220804112203694
+status=0
+message=null
+lastAccessTime=2022-08-04 11:22:04.360
+start_time=20220804112204
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804112203694
+start_milli_time=1659579724361
+opcode=702
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 16:27:18.817][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804162718817][RequestInfo]
+rdid=20220804162718817
+status=0
+message=null
+lastAccessTime=2022-08-04 16:27:18.814
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=mml
+start_time=20220804162718
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598038817
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:27:18.818][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804162718817]Put in Queue(0/100)
+[2022-08-04 16:27:18.818][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804162718817]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:27:18.819][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804162718817]export start: sample.mrd
+[2022-08-04 16:27:18.823][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804162718817]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:27:19.175][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804162718817]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804162718817.mml)
+fileRelativePath=2022/08/04/20220804162718817.mml
+
+[2022-08-04 16:27:19.450][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804162718817]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804162718817.mml
+[2022-08-04 16:27:19.451][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804162718817]Executer return(totalPage):18
+[2022-08-04 16:28:15.451][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804162815450][RequestInfo]
+rdid=20220804162815450
+status=0
+message=null
+lastAccessTime=2022-08-04 16:28:15.450
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf,mml
+start_time=20220804162815
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598095451
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:28:24.140][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804162824140][RequestInfo]
+rdid=20220804162824140
+status=0
+message=null
+lastAccessTime=2022-08-04 16:28:24.140
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804162824
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598104140
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:28:24.141][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804162824140]Put in Queue(0/100)
+[2022-08-04 16:28:24.141][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804162824140]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:28:24.141][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804162824140]export start: sample.mrd
+[2022-08-04 16:28:24.145][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804162824140]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:28:24.346][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804162824140]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804162824140.pdf)
+fileRelativePath=2022/08/04/20220804162824140.pdf
+
+[2022-08-04 16:28:26.376][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804162824140]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804162824140.mml)
+fileRelativePath=2022/08/04/20220804162824140.mml
+
+[2022-08-04 16:28:26.619][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804162824140]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804162824140.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804162824140.mml
+[2022-08-04 16:28:26.620][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804162824140]Executer return(totalPage):18
+[2022-08-04 16:28:33.910][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804162833910][RequestInfo]
+rdid=20220804162833910
+status=0
+message=null
+lastAccessTime=2022-08-04 16:28:33.909
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804162833
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598113910
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:28:33.911][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804162833910]Put in Queue(0/100)
+[2022-08-04 16:28:33.911][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804162833910]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:28:33.911][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804162833910]export start: sample.mrd
+[2022-08-04 16:28:33.914][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804162833910]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:28:34.054][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804162833910]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804162833910.pdf)
+fileRelativePath=2022/08/04/20220804162833910.pdf
+
+[2022-08-04 16:28:35.451][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804162833910]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804162833910.mml)
+fileRelativePath=2022/08/04/20220804162833910.mml
+
+[2022-08-04 16:28:35.694][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804162833910]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804162833910.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804162833910.mml
+[2022-08-04 16:28:35.695][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804162833910]Executer return(totalPage):18
+[2022-08-04 16:32:49.409][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804163249408][RequestInfo]
+rdid=20220804163249408
+status=0
+message=null
+lastAccessTime=2022-08-04 16:32:49.408
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=certpdf
+start_time=20220804163249
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598369408
+opcode=502
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:32:49.410][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804163249408]Put in Queue(0/100)
+[2022-08-04 16:32:49.411][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804163249408]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:32:49.411][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804163249408]export start: sample.mrd
+[2022-08-04 16:32:49.414][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804163249408]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:32:49.538][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804163249408]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804163249408.pdf)
+fileRelativePath=2022/08/04/20220804163249408.pdf
+
+[2022-08-04 16:32:50.646][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804163249408]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804163249408.pdf
+[2022-08-04 16:32:50.646][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804163249408]Executer return(totalPage):18
+[2022-08-04 16:35:17.123][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804163517123][RequestInfo]
+rdid=20220804163517123
+status=0
+message=null
+lastAccessTime=2022-08-04 16:35:17.122
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=certpdf
+start_time=20220804163517
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598517123
+opcode=502
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:35:17.123][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804163517123]Put in Queue(0/100)
+[2022-08-04 16:35:17.123][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804163517123]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:35:17.124][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804163517123]export start: sample7.mrd
+[2022-08-04 16:35:17.126][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804163517123]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:35:17.230][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804163517123]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804163517123.pdf)
+fileRelativePath=2022/08/04/20220804163517123.pdf
+
+[2022-08-04 16:35:18.159][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804163517123]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804163517123.pdf
+[2022-08-04 16:35:18.159][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804163517123]Executer return(totalPage):18
+[2022-08-04 16:36:57.638][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804163657638][RequestInfo]
+rdid=20220804163657638
+status=0
+message=null
+lastAccessTime=2022-08-04 16:36:57.638
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804163657
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598617638
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:36:57.638][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804163657638]Put in Queue(0/100)
+[2022-08-04 16:36:57.642][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804163657638]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:36:57.644][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804163657638]export start: sample7.mrd
+[2022-08-04 16:36:57.646][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804163657638]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:36:57.778][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804163657638]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804163657638.pdf)
+fileRelativePath=2022/08/04/20220804163657638.pdf
+
+[2022-08-04 16:36:58.586][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804163657638]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804163657638.mml)
+fileRelativePath=2022/08/04/20220804163657638.mml
+
+[2022-08-04 16:36:58.763][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804163657638]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804163657638.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804163657638.mml
+[2022-08-04 16:36:58.764][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804163657638]Executer return(totalPage):18
+[2022-08-04 16:42:50.276][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164250276][RequestInfo]
+rdid=20220804164250276
+status=0
+message=null
+lastAccessTime=2022-08-04 16:42:50.275
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804164250
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598970276
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:42:50.277][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164250276]Put in Queue(0/100)
+[2022-08-04 16:42:50.278][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164250276]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:42:50.278][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164250276]export start: sample7.mrd
+[2022-08-04 16:42:50.281][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164250276]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:42:50.418][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164250276]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164250276.pdf)
+fileRelativePath=2022/08/04/20220804164250276.pdf
+
+[2022-08-04 16:42:51.262][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164250276]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164250276.mml)
+fileRelativePath=2022/08/04/20220804164250276.mml
+
+[2022-08-04 16:42:51.411][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164250276]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164250276.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164250276.mml
+[2022-08-04 16:42:51.411][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164250276]Executer return(totalPage):18
+[2022-08-04 16:43:09.483][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164309483][RequestInfo]
+rdid=20220804164309483
+status=0
+message=null
+lastAccessTime=2022-08-04 16:43:09.483
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804164309
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598989483
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:43:09.484][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164309483]Put in Queue(0/100)
+[2022-08-04 16:43:09.484][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164309483]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:43:09.485][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164309483]export start: sample.mrd
+[2022-08-04 16:43:09.489][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164309483]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:43:09.637][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164309483]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164309483.pdf)
+fileRelativePath=2022/08/04/20220804164309483.pdf
+
+[2022-08-04 16:43:10.456][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164309483]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164309483.mml)
+fileRelativePath=2022/08/04/20220804164309483.mml
+
+[2022-08-04 16:43:10.631][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164309483]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164309483.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164309483.mml
+[2022-08-04 16:43:10.631][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164309483]Executer return(totalPage):18
+[2022-08-04 16:43:14.486][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164314486][RequestInfo]
+rdid=20220804164314486
+status=0
+message=null
+lastAccessTime=2022-08-04 16:43:14.486
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804164314
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659598994486
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:43:14.487][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164314486]Put in Queue(0/100)
+[2022-08-04 16:43:14.487][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164314486]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:43:14.487][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164314486]export start: sample.mrd
+[2022-08-04 16:43:14.490][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164314486]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:43:14.631][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164314486]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164314486.pdf)
+fileRelativePath=2022/08/04/20220804164314486.pdf
+
+[2022-08-04 16:43:15.486][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164314486]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164314486.mml)
+fileRelativePath=2022/08/04/20220804164314486.mml
+
+[2022-08-04 16:43:15.678][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164314486]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164314486.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164314486.mml
+[2022-08-04 16:43:15.679][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164314486]Executer return(totalPage):18
+[2022-08-04 16:43:31.690][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164331689][RequestInfo]
+rdid=20220804164331689
+status=0
+message=null
+lastAccessTime=2022-08-04 16:43:31.689
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=certpdf
+start_time=20220804164331
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659599011689
+opcode=502
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample.mrd
+
+[2022-08-04 16:43:31.690][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164331689]Put in Queue(0/100)
+[2022-08-04 16:43:31.690][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164331689]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:43:31.691][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164331689]export start: sample.mrd
+[2022-08-04 16:43:31.693][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164331689]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:43:31.836][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164331689]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164331689.pdf)
+fileRelativePath=2022/08/04/20220804164331689.pdf
+
+[2022-08-04 16:43:32.698][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164331689]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164331689.pdf
+[2022-08-04 16:43:32.699][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164331689]Executer return(totalPage):18
+[2022-08-04 16:44:32.516][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164432516][RequestInfo]
+rdid=20220804164432516
+status=0
+message=null
+lastAccessTime=2022-08-04 16:44:32.516
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=certpdf
+start_time=20220804164432
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659599072516
+opcode=502
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:44:32.517][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164432516]Put in Queue(0/100)
+[2022-08-04 16:44:32.517][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164432516]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:44:32.517][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164432516]export start: sample7.mrd
+[2022-08-04 16:44:32.520][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164432516]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:44:32.670][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164432516]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164432516.pdf)
+fileRelativePath=2022/08/04/20220804164432516.pdf
+
+[2022-08-04 16:44:33.950][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164432516]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164432516.pdf
+[2022-08-04 16:44:33.950][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164432516]Executer return(totalPage):18
+[2022-08-04 16:44:49.466][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164449465][RequestInfo]
+rdid=20220804164449465
+status=0
+message=null
+lastAccessTime=2022-08-04 16:44:49.465
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804164449
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659599089465
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:44:49.467][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164449465]Put in Queue(0/100)
+[2022-08-04 16:44:49.467][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164449465]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:44:49.467][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164449465]export start: sample7.mrd
+[2022-08-04 16:44:49.469][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164449465]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:44:49.590][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164449465]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164449465.pdf)
+fileRelativePath=2022/08/04/20220804164449465.pdf
+
+[2022-08-04 16:44:50.405][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164449465]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164449465.mml)
+fileRelativePath=2022/08/04/20220804164449465.mml
+
+[2022-08-04 16:44:50.562][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164449465]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164449465.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164449465.mml
+[2022-08-04 16:44:50.562][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164449465]Executer return(totalPage):18
+[2022-08-04 16:45:24.078][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164524078][RequestInfo]
+rdid=20220804164524078
+status=0
+message=null
+lastAccessTime=2022-08-04 16:45:24.078
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=pdf;mml
+start_time=20220804164524
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659599124078
+opcode=500
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:45:24.079][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164524078]Put in Queue(0/100)
+[2022-08-04 16:45:24.079][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164524078]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:45:24.079][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164524078]export start: sample7.mrd
+[2022-08-04 16:45:24.082][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164524078]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:45:24.192][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164524078]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164524078.pdf)
+fileRelativePath=2022/08/04/20220804164524078.pdf
+
+[2022-08-04 16:45:25.056][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164524078]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164524078.mml)
+fileRelativePath=2022/08/04/20220804164524078.mml
+
+[2022-08-04 16:45:25.202][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164524078]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164524078.pdf;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164524078.mml
+[2022-08-04 16:45:25.202][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164524078]Executer return(totalPage):18
+[2022-08-04 16:45:45.651][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164545651][RequestInfo]
+rdid=20220804164545651
+status=0
+message=null
+lastAccessTime=2022-08-04 16:45:45.651
+mrd_param=/rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0]
+export_type=certpdf
+start_time=20220804164545
+protocol=sync
+remote_ip=127.0.0.1
+start_milli_time=1659599145651
+opcode=502
+request_uri=http://127.0.0.1:8081/ReportingServer
+user_agent=ReportDesigner
+mrd_path=sample7.mrd
+
+[2022-08-04 16:45:45.651][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164545651]Put in Queue(0/100)
+[2022-08-04 16:45:45.651][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164545651]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:45:45.652][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804164545651]export start: sample7.mrd
+[2022-08-04 16:45:45.654][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804164545651]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample7.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rsetpdfsecurity [2222,11 ,0,0,0])
+[2022-08-04 16:45:45.775][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804164545651]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804164545651.pdf)
+fileRelativePath=2022/08/04/20220804164545651.pdf
+
+[2022-08-04 16:45:46.981][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804164545651]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804164545651.pdf
+[2022-08-04 16:45:46.981][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804164545651]Executer return(totalPage):18
+[2022-08-04 16:48:25.982][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:25.981
+mrd_param=/rfn [http://localhost:8081/ReportingServer/mrd/sample.txt]
+opcode=701
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220804164825
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1659599305981
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+mrd_path=http://localhost:8081/ReportingServer/mrd/sample.mrd
+
+[2022-08-04 16:48:25.982][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804164825981]Put in Queue(0/100)
+[2022-08-04 16:48:25.982][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804164825981]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 16:48:26.624][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:26.623
+start_time=20220804164826
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804164825981
+start_milli_time=1659599306624
+opcode=702
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 16:48:38.047][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:38.047
+start_time=20220804164838
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804164825981
+mmlVersion=2.7
+start_milli_time=1659599318047
+page=2
+opcode=703
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+withHead=true
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 16:48:38.327][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:38.327
+start_time=20220804164838
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804164825981
+mmlVersion=2.7
+start_milli_time=1659599318327
+page=3
+opcode=703
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+withHead=true
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 16:48:38.478][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:38.477
+start_time=20220804164838
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804164825981
+mmlVersion=2.7
+start_milli_time=1659599318477
+page=3
+opcode=703
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+withHead=true
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 16:48:38.694][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:38.694
+start_time=20220804164838
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804164825981
+mmlVersion=2.7
+start_milli_time=1659599318694
+page=4
+opcode=703
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+withHead=true
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 16:48:38.857][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804164825981][RequestInfo]
+rdid=20220804164825981
+status=0
+message=null
+lastAccessTime=2022-08-04 16:48:38.857
+start_time=20220804164838
+remote_ip=0:0:0:0:0:0:0:1
+rdid=20220804164825981
+mmlVersion=2.7
+start_milli_time=1659599318857
+page=4
+opcode=703
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+withHead=true
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+
+[2022-08-04 17:19:43.435][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804171943435][RequestInfo]
+rdid=20220804171943435
+status=0
+message=null
+lastAccessTime=2022-08-04 17:19:43.435
+mrd_param=/rfn [sample.txt]
+opcode=700
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+start_time=20220804171943
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+runtime_param=
+mrd_plain_param=
+mmlVersion=0
+start_milli_time=1659601183435
+mrd_data=
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+mrd_path=sample.mrd
+
+[2022-08-04 17:19:43.462][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804171943435]Put in Queue(0/100)
+[2022-08-04 17:19:43.462][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804171943435]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 17:19:47.359][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804171947358][RequestInfo]
+rdid=20220804171947358
+status=0
+message=null
+lastAccessTime=2022-08-04 17:19:47.358
+mrd_param=/rfn [sample.txt] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=jpg
+start_time=20220804171947
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+start_milli_time=1659601187358
+opcode=500
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+mrd_path=sample.mrd
+
+[2022-08-04 17:19:47.359][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804171947358]Put in Queue(0/100)
+[2022-08-04 17:19:47.359][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804171947358]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 17:19:47.360][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804171947358]export start: sample.mrd
+[2022-08-04 17:19:47.362][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804171947358]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko])
+[2022-08-04 17:19:47.486][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804171947358]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804171947358.jpg)
+fileRelativePath=2022/08/04/20220804171947358.jpg
+
+[2022-08-04 17:19:49.080][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804171947358]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_1.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_2.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_3.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_4.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_5.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_6.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_7.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_8.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_9.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_10.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_11.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_12.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_13.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_14.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_15.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_16.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_17.jpg;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804171947358_18.jpg
+[2022-08-04 17:19:49.080][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804171947358]Executer return(totalPage):18
+[2022-08-04 17:20:00.464][DEBUG][m2soft.ers.report.core.processor.RequestParser.parse(RequestParser.java:60)][20220804172000463][RequestInfo]
+rdid=20220804172000463
+status=0
+message=null
+lastAccessTime=2022-08-04 17:20:00.463
+mrd_param=/rfn [sample.txt] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko]
+export_type=png
+start_time=20220804172000
+protocol=sync
+remote_ip=0:0:0:0:0:0:0:1
+start_milli_time=1659601200463
+opcode=500
+request_uri=http://0:0:0:0:0:0:0:1:8081/ReportingServer
+crownix-client=html5viewer
+user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+mrd_path=sample.mrd
+
+[2022-08-04 17:20:00.464][DEBUG][m2soft.ers.report.core.HandlerSetQueue.put(HandlerSetQueue.java:60)][20220804172000463]Put in Queue(0/100)
+[2022-08-04 17:20:00.465][DEBUG][m2soft.ers.report.core.executer.Executer.run(Executer.java:42)][20220804172000463]{ERSExecuter-2}Pop from Queue(0/100)
+[2022-08-04 17:20:00.465][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:92)][20220804172000463]export start: sample.mrd
+[2022-08-04 17:20:00.469][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.openSingleFile(MultiViewer.java:196)][20220804172000463]ServerSideRD.FileOpen(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\mrd\sample.mrd,/rwait /rmessageboxshow [0] /rssemessageboxshow /rpdfexportapitype /rhtml4base64img /rpdffontlist [Arial|arial.ttf&Malgun Gothic|malgun.ttf&Batang|Batang.ttf&BatangChe|BatangChe.ttf&±¼¸²|Gulim.ttf&±¼¸²Ã¼|GulimChe.ttf&MS Gothic|MS PGothic.ttf&Tahoma|tahoma.ttf&Times New Roman|times.ttf&MS Mincho|MSMINCHO.TTF&MingLiU|Mingliu.ttf&SimSun|SimSun.ttf&Meiryo|MEIRYO.TTC&OCRB|OCRB.TTF,C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/font/] /rsaveopt [32] /rtempdir [C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/WEB-INF/temp] /rfn [sample.txt] /rformcurformat [? #,###] /rformnumformat [#,###.###] /rbrowserlocale [ko])
+[2022-08-04 17:20:00.593][DEBUG][m2soft.ers.report.core.viewer.MultiViewer.saveAsFile(MultiViewer.java:386)][20220804172000463]ServerSideRD.SaveAsXXX(C:\Program Files\Apache Software Foundation\apache-tomcat-8.5.50\webapps\ReportingServer\report\2022\08\04\20220804172000463.png)
+fileRelativePath=2022/08/04/20220804172000463.png
+
+[2022-08-04 17:20:06.973][DEBUG][m2soft.ers.report.core.handler.ExportHandler.export(ExportHandler.java:112)][20220804172000463]export success: C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_1.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_2.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_3.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_4.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_5.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_6.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_7.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_8.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_9.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_10.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_11.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_12.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_13.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_14.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_15.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_16.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_17.png;C:/Program Files/Apache Software Foundation/apache-tomcat-8.5.50/webapps/ReportingServer/report/2022/08/04/20220804172000463_18.png
+[2022-08-04 17:20:06.974][DEBUG][m2soft.ers.report.core.handler.ExportHandler.setPageCountInHeader(ExportHandler.java:243)][20220804172000463]Executer return(totalPage):18
